@@ -23,7 +23,7 @@ struct ListingsFilterBar: View {
                     content: {
                         Text("Buy")
                             .font(Typography.regular(size: 14))
-//                           
+
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .lineLimit(1)
                     }
