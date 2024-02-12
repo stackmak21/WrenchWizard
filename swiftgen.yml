@@ -1,0 +1,21 @@
+strings:
+  inputs: WrenchWizard/ios/Strings/en.lproj
+  outputs:
+    - templateName: structured-swift5
+      params:
+        enumName: Strings
+      output: Generated/Strings.swift
+xcassets:
+  inputs: WrenchWizard/ios/Assets.xcassets
+  outputs:
+    - templateName: swift5
+      params:
+        forceProvidesNamespaces: true
+      output: Generated/Assets.swift
+fonts:
+  inputs: WrenchWizard/ios/Fonts
+  outputs:
+    templateName: swift5
+    params:
+       fontAliasName: GeneratedFont
+    output: Generated/Fonts.swift
