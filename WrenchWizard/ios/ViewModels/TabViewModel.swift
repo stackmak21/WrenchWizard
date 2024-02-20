@@ -8,14 +8,16 @@
 import Foundation
 
 
+class TabViewModel: ObservableObject {
+    @Published var activeScreen: ActiveScreen = .home
+    
+}
+
+
 enum ActiveScreen: String {
     case home = "home"
     case search = "search"
     case account = "account"
     case mechanic = "listings"
-    
-}
-class TabViewModel: ObservableObject {
-    @Published var activeScreen: ActiveScreen = .home
     
 }
