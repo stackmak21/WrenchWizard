@@ -71,13 +71,13 @@ struct TextFieldColorSet {
         }
     }
 
-    func helperColor(isEnabled: Bool, isError: Bool) -> Color {
-        if isEnabled {
-            return isError ? error : helper
-        } else {
-            return disabledAccent
-        }
-    }
+//    func helperColor(isEnabled: Bool, isError: Bool) -> Color {
+//        if isEnabled {
+//            return isError ? error : helper
+//        } else {
+//            return disabledAccent
+//        }
+//    }
 }
 
 struct TextFieldTyporaphySet {

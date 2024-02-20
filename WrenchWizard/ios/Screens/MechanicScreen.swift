@@ -10,16 +10,14 @@ import SwiftUI
 struct MechanicScreen: View {
     @StateObject var viewModel: MechanicViewModel
     
-    init(viewModel: MechanicViewModel) {
-        self._viewModel = StateObject(wrappedValue: viewModel)
-    }
+    
     var body: some View {
-        MechanicContent()
+        MechanicContent(vm: viewModel)
     }
 }
 
 private struct MechanicContent: View {
-
+    @ObservedObject var vm: MechanicViewModel
     var body: some View{
         ZStack{
             Text("")
@@ -27,6 +25,6 @@ private struct MechanicContent: View {
     }
 }
 
-#Preview {
-    MechanicContent()
-}
+//#Preview {
+//    MechanicContent()
+//}

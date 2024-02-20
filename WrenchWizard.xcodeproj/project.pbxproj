@@ -48,9 +48,18 @@
 		F960AB102B78DC5900944F6C /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F960AB0D2B78DC5900944F6C /* Assets.swift */; };
 		F960AB112B78DC5900944F6C /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F960AB0E2B78DC5900944F6C /* Strings.swift */; };
 		F960AB122B78DC5900944F6C /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F960AB0F2B78DC5900944F6C /* Fonts.swift */; };
-		F960AB162B78E6A700944F6C /* ListingsFilterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F960AB152B78E6A700944F6C /* ListingsFilterBar.swift */; };
-		F960AB192B78E83A00944F6C /* PickerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F960AB182B78E83A00944F6C /* PickerButton.swift */; };
 		F960AB1D2B78F0FE00944F6C /* TextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F960AB1C2B78F0FE00944F6C /* TextFieldStyle.swift */; };
+		F960AB212B7BE52800944F6C /* HomeFilterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F960AB202B7BE52800944F6C /* HomeFilterBar.swift */; };
+		F960AB232B7BE5E900944F6C /* PickerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F960AB222B7BE5E900944F6C /* PickerButton.swift */; };
+		F960AB262B7BEA6D00944F6C /* PickerButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F960AB252B7BEA6D00944F6C /* PickerButtonStyles.swift */; };
+		F960AB2A2B7E5BDD00944F6C /* MechanicPickerSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F960AB292B7E5BDD00944F6C /* MechanicPickerSheet.swift */; };
+		F960AB2C2B7E5F2500944F6C /* PickerContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F960AB2B2B7E5F2500944F6C /* PickerContent.swift */; };
+		F960AB2E2B7E5F8700944F6C /* ToolbarItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = F960AB2D2B7E5F8700944F6C /* ToolbarItems.swift */; };
+		F960AB322B7E7C9D00944F6C /* LabeledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F960AB312B7E7C9D00944F6C /* LabeledTextField.swift */; };
+		F960AB342B7EB05500944F6C /* ExpandFilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F960AB332B7EB05500944F6C /* ExpandFilterButton.swift */; };
+		F960AB3A2B824BCA00944F6C /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F960AB392B824BCA00944F6C /* NetworkingManager.swift */; };
+		F960AB402B824EB400944F6C /* Mechanic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F960AB3F2B824EB400944F6C /* Mechanic.swift */; };
+		F960AB422B840E3900944F6C /* MechanicListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F960AB412B840E3900944F6C /* MechanicListItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,9 +108,18 @@
 		F960AB0D2B78DC5900944F6C /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		F960AB0E2B78DC5900944F6C /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		F960AB0F2B78DC5900944F6C /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
-		F960AB152B78E6A700944F6C /* ListingsFilterBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingsFilterBar.swift; sourceTree = "<group>"; };
-		F960AB182B78E83A00944F6C /* PickerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerButton.swift; sourceTree = "<group>"; };
 		F960AB1C2B78F0FE00944F6C /* TextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldStyle.swift; sourceTree = "<group>"; };
+		F960AB202B7BE52800944F6C /* HomeFilterBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterBar.swift; sourceTree = "<group>"; };
+		F960AB222B7BE5E900944F6C /* PickerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerButton.swift; sourceTree = "<group>"; };
+		F960AB252B7BEA6D00944F6C /* PickerButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerButtonStyles.swift; sourceTree = "<group>"; };
+		F960AB292B7E5BDD00944F6C /* MechanicPickerSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MechanicPickerSheet.swift; sourceTree = "<group>"; };
+		F960AB2B2B7E5F2500944F6C /* PickerContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerContent.swift; sourceTree = "<group>"; };
+		F960AB2D2B7E5F8700944F6C /* ToolbarItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarItems.swift; sourceTree = "<group>"; };
+		F960AB312B7E7C9D00944F6C /* LabeledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabeledTextField.swift; sourceTree = "<group>"; };
+		F960AB332B7EB05500944F6C /* ExpandFilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandFilterButton.swift; sourceTree = "<group>"; };
+		F960AB392B824BCA00944F6C /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		F960AB3F2B824EB400944F6C /* Mechanic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mechanic.swift; sourceTree = "<group>"; };
+		F960AB412B840E3900944F6C /* MechanicListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MechanicListItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,10 +191,13 @@
 		F960AA9B2B7545E600944F6C /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				F960AB352B824B7000944F6C /* Networking */,
 				F960AA9D2B7545F500944F6C /* Strings */,
 				F960AA9C2B7545EE00944F6C /* Fonts */,
 				F960AAC42B75558E00944F6C /* Extensions */,
 				F960AABF2B75530F00944F6C /* Theme */,
+				F960AB2F2B7E637A00944F6C /* Styles */,
+				F960AB302B7E639200944F6C /* Sheets */,
 				F960AAE32B77757600944F6C /* Views */,
 				F960AABE2B7551D500944F6C /* Screens */,
 				F960AAE72B777DC400944F6C /* ViewModels */,
@@ -251,10 +272,14 @@
 		F960AAE32B77757600944F6C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F960AB242B7BE9F600944F6C /* PickerButton */,
 				F960AB1B2B78F0D800944F6C /* TextFieldStyle */,
-				F960AB172B78E81400944F6C /* PickerButton */,
-				F960AB142B78E5D100944F6C /* Listings */,
 				F960AAF02B7793E000944F6C /* Shadow.swift */,
+				F960AB202B7BE52800944F6C /* HomeFilterBar.swift */,
+				F960AB2D2B7E5F8700944F6C /* ToolbarItems.swift */,
+				F960AB312B7E7C9D00944F6C /* LabeledTextField.swift */,
+				F960AB332B7EB05500944F6C /* ExpandFilterButton.swift */,
+				F960AB412B840E3900944F6C /* MechanicListItem.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -281,28 +306,70 @@
 			path = Generated;
 			sourceTree = "<group>";
 		};
-		F960AB142B78E5D100944F6C /* Listings */ = {
+		F960AB1B2B78F0D800944F6C /* TextFieldStyle */ = {
 			isa = PBXGroup;
 			children = (
-				F960AB152B78E6A700944F6C /* ListingsFilterBar.swift */,
 			);
-			path = Listings;
+			path = TextFieldStyle;
 			sourceTree = "<group>";
 		};
-		F960AB172B78E81400944F6C /* PickerButton */ = {
+		F960AB242B7BE9F600944F6C /* PickerButton */ = {
 			isa = PBXGroup;
 			children = (
-				F960AB182B78E83A00944F6C /* PickerButton.swift */,
+				F960AB222B7BE5E900944F6C /* PickerButton.swift */,
+				F960AB2B2B7E5F2500944F6C /* PickerContent.swift */,
 			);
 			path = PickerButton;
 			sourceTree = "<group>";
 		};
-		F960AB1B2B78F0D800944F6C /* TextFieldStyle */ = {
+		F960AB2F2B7E637A00944F6C /* Styles */ = {
 			isa = PBXGroup;
 			children = (
 				F960AB1C2B78F0FE00944F6C /* TextFieldStyle.swift */,
+				F960AB252B7BEA6D00944F6C /* PickerButtonStyles.swift */,
 			);
-			path = TextFieldStyle;
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		F960AB302B7E639200944F6C /* Sheets */ = {
+			isa = PBXGroup;
+			children = (
+				F960AB292B7E5BDD00944F6C /* MechanicPickerSheet.swift */,
+			);
+			path = Sheets;
+			sourceTree = "<group>";
+		};
+		F960AB352B824B7000944F6C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F960AB382B824B9600944F6C /* Services */,
+				F960AB372B824B8400944F6C /* Models */,
+				F960AB362B824B7B00944F6C /* Utilities */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F960AB362B824B7B00944F6C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F960AB392B824BCA00944F6C /* NetworkingManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F960AB372B824B8400944F6C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F960AB3F2B824EB400944F6C /* Mechanic.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F960AB382B824B9600944F6C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -446,26 +513,35 @@
 			files = (
 				F960AAC32B75533200944F6C /* Typography.swift in Sources */,
 				F960AAF52B77C17E00944F6C /* TabViewModel.swift in Sources */,
-				F960AB162B78E6A700944F6C /* ListingsFilterBar.swift in Sources */,
 				F960AAC12B75532800944F6C /* Colors.swift in Sources */,
 				F960AAFF2B78BB9200944F6C /* HomeViewModel.swift in Sources */,
 				F960AAFD2B78B70A00944F6C /* AccountScreen.swift in Sources */,
+				F960AB2A2B7E5BDD00944F6C /* MechanicPickerSheet.swift in Sources */,
 				F960AAFB2B78B6FF00944F6C /* SearchScreen.swift in Sources */,
+				F960AB2C2B7E5F2500944F6C /* PickerContent.swift in Sources */,
 				F960AB1D2B78F0FE00944F6C /* TextFieldStyle.swift in Sources */,
 				F960AB102B78DC5900944F6C /* Assets.swift in Sources */,
+				F960AB212B7BE52800944F6C /* HomeFilterBar.swift in Sources */,
 				F960AB032B78BBAD00944F6C /* SearchViewModel.swift in Sources */,
+				F960AB2E2B7E5F8700944F6C /* ToolbarItems.swift in Sources */,
+				F960AB3A2B824BCA00944F6C /* NetworkingManager.swift in Sources */,
+				F960AB422B840E3900944F6C /* MechanicListItem.swift in Sources */,
+				F960AB342B7EB05500944F6C /* ExpandFilterButton.swift in Sources */,
 				F960AAF92B78B6F100944F6C /* MechanicScreen.swift in Sources */,
 				F960AAEF2B778ECF00944F6C /* TabView.swift in Sources */,
+				F960AB402B824EB400944F6C /* Mechanic.swift in Sources */,
 				F960AB112B78DC5900944F6C /* Strings.swift in Sources */,
 				F960AB052B78BBBB00944F6C /* AccountViewModel.swift in Sources */,
 				F960AA8E2B75413800944F6C /* WrenchWizardApp.swift in Sources */,
 				F960AAE22B77721500944F6C /* ColorExtensions.swift in Sources */,
+				F960AB262B7BEA6D00944F6C /* PickerButtonStyles.swift in Sources */,
 				F960AAF72B78B67900944F6C /* HomeScreen.swift in Sources */,
 				F960AAF12B7793E000944F6C /* Shadow.swift in Sources */,
 				F960AAC62B7555A200944F6C /* FontExtensions.swift in Sources */,
-				F960AB192B78E83A00944F6C /* PickerButton.swift in Sources */,
+				F960AB322B7E7C9D00944F6C /* LabeledTextField.swift in Sources */,
 				F960AB122B78DC5900944F6C /* Fonts.swift in Sources */,
 				F960AB012B78BBA000944F6C /* MechanicViewModel.swift in Sources */,
+				F960AB232B7BE5E900944F6C /* PickerButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,6 +698,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -654,6 +731,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

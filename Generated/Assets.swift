@@ -48,10 +48,10 @@ internal enum Asset {
       internal static let normalBackground = ColorAsset(name: "normal_background")
       internal static let normalForeground = ColorAsset(name: "normal_foreground")
     }
+    internal static let contentBackgroundPrimary = ColorAsset(name: "content_Background_Primary")
+    internal static let contentBackgroundSecondary = ColorAsset(name: "content_Background_Secondary")
     internal static let primary = ColorAsset(name: "primary")
   }
-  internal static let contentBackgroundPrimary = ColorAsset(name: "contentBackgroundPrimary")
-  internal static let contentBackgroundSecondary = ColorAsset(name: "contentBackgroundSecondary")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 
