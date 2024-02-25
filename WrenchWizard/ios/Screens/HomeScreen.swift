@@ -12,7 +12,7 @@ struct HomeScreen: View {
     
     var body: some View {
         
-            HomeContent(vm: viewModel)
+        HomeContent(vm: viewModel)
         
         
     }
@@ -34,7 +34,7 @@ private struct HomeContent: View {
                 
                 
                 
-                    
+                
                 ScrollView(showsIndicators: false){
                     Text("All Services")
                         .font(Typography.semiBold(size: 24))
@@ -42,18 +42,23 @@ private struct HomeContent: View {
                         .padding()
                     
                     categoriesGrid(selectionSize: buttonSize(proxy: container))
-                        
+                    
                     Text("Recommended Mechanics")
                         .font(Typography.semiBold(size: 24))
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.horizontal)
                     
                     ScrollView(.horizontal, showsIndicators: false) {
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                            ListingItem()
-                        })
-                        .buttonStyle(ItemsButtonStyle())
-                        .padding()
+                        LazyHStack{
+                            ForEach(vm.mechanics, id: \.self.id){ mechanic in
+                                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                                    ListingItem()
+                                })
+                                .buttonStyle(ItemsButtonStyle())
+                                .padding()
+                            }
+                            
+                        }
                     }
                     Spacer().frame(height: 300)
                 }
@@ -61,6 +66,7 @@ private struct HomeContent: View {
             .ignoresSafeArea()
             .onAppear(){
                 vm.fetchCategories()
+                vm.fetchMechanics()
             }
             .sheet(isPresented: $vm.state.isPresented, content: {
                 switch vm.state.activeSheet{

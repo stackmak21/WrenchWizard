@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct ListingItem: View {
-    
+//    test
+    let mechanic: Mechanic
     
     var body: some View {
         VStack(alignment: .leading, spacing: 0, content: {
@@ -20,7 +21,7 @@ struct ListingItem: View {
                     Circle()
                         .frame(width: 36, height: 36)
                     VStack(alignment: .leading){
-                        Text("Makris")
+                        Text(mechanic.lastName)
                             .font(Typography.medium(size: 14))
                         Text("Electec")
                             .font(Typography.light(size: 12))
