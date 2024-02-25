@@ -28,7 +28,7 @@ import Foundation
 //}
 //
 // Mechanic struct matching the JSON structure
-struct Mechanic: Identifiable, Codable {
+struct Mechanic: Identifiable, Codable, Hashable {
     let id: UUID
     let firstName: String
     let lastName: String
@@ -39,6 +39,7 @@ struct Mechanic: Identifiable, Codable {
     let address: String
     let city: String
     let postalCode: String
+    let subCategoryId: Int
 
     // Custom keys to match JSON property names
     enum CodingKeys: String, CodingKey {
@@ -52,6 +53,7 @@ struct Mechanic: Identifiable, Codable {
         case address
         case city
         case postalCode
+        case subCategoryId
     }
 }
 

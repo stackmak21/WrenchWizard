@@ -11,9 +11,9 @@ struct HomeScreen: View {
     @ObservedObject var viewModel: HomeViewModel
     
     var body: some View {
-        ScrollView(){
+        
             HomeContent(vm: viewModel)
-        }
+        
         
     }
 }
@@ -23,7 +23,7 @@ private struct HomeContent: View {
     
     var body: some View{
         GeometryReader{ container in
-            VStack(spacing: 0){
+            VStack(alignment: .leading, spacing: 0){
                 HomeFilterBar(vm: vm)
                     .padding(.top, container.safeAreaInsets.top)
                     .padding(.leading, container.safeAreaInsets.leading)
@@ -33,28 +33,35 @@ private struct HomeContent: View {
                     .zIndex(1)
                 
                 
-                ForEach(vm.mechanics, id: \.self.id){ mechanic in
-                    VStack{
-                        Spacer().frame(height: 10)
-                        MechanicListItem()
-                            .padding(.horizontal)
+                
+                    
+                ScrollView(showsIndicators: false){
+                    Text("All Services")
+                        .font(Typography.semiBold(size: 24))
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding()
+                    
+                    categoriesGrid(selectionSize: buttonSize(proxy: container))
                         
+                    Text("Recommended Mechanics")
+                        .font(Typography.semiBold(size: 24))
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.horizontal)
+                    
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                            ListingItem()
+                        })
+                        .buttonStyle(ItemsButtonStyle())
+                        .padding()
                     }
-                        
-                        
-                    
-                    
+                    Spacer().frame(height: 300)
                 }
-                
-                
-               
-                
             }
-            .onAppear(perform: {
-                Task{
-                    await vm.fetchMechanics()
-                }
-            })
+            .ignoresSafeArea()
+            .onAppear(){
+                vm.fetchCategories()
+            }
             .sheet(isPresented: $vm.state.isPresented, content: {
                 switch vm.state.activeSheet{
                 case .mechanicsFilter:
@@ -63,12 +70,30 @@ private struct HomeContent: View {
                     Text("Person")
                 }
             })
-            
-            .edgesIgnoringSafeArea([.top, .leading, .trailing])
-            
-            
-            
         }
+    }
+    
+    @ViewBuilder func categoriesGrid(selectionSize size: CGFloat) -> some View {
+        LazyVGrid(
+            columns: [GridItem(.fixed(size), spacing: 10), GridItem(.fixed(size), spacing: 10), GridItem(.fixed(size), spacing: 10)]
+        ) {
+            ForEach(vm.categories, id: \.self) { category in
+                Button(action: {
+                    
+                }, label: {
+                    VStack(spacing: 0) {
+                        Text(category.title.capitalized)
+                            .multilineTextAlignment(.center)
+                    }
+                    .frame(width: size, height: size)
+                })
+                .buttonStyle(CategoriesButtonStyle())
+            }
+        }
+    }
+    
+    private func buttonSize(proxy: GeometryProxy) -> CGFloat {
+        return (proxy.size.width - proxy.safeAreaInsets.leading - proxy.safeAreaInsets.trailing - 170) / 2.0
     }
 }
 

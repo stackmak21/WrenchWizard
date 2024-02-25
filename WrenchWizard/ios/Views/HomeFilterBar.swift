@@ -87,7 +87,9 @@ struct HomeFilterBar: View {
                 Spacer().frame(height: 16)
             }
             
+            
         }
+        
         
         
     }

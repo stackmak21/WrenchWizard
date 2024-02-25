@@ -17,5 +17,9 @@ enum ShadowLength: CGFloat {
 extension View {
     func shadow(length: ShadowLength) -> some View {
         return shadow(radius: length.rawValue)
+        
+    }
+    func shadowOffset(length: ShadowLength, x: CGFloat, y: CGFloat) -> some View {
+        return shadow(radius: length.rawValue, x: 1, y: 2)
     }
 }

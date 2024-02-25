@@ -12,11 +12,22 @@ class HomeViewModel: ObservableObject{
     @Published var state = State()
     @Published var searchTerm = ""
     @Published var mechanics: [Mechanic] = [Mechanic]()
+    @Published var categories: [Category] = [Category]()
     
-    func fetchMechanics() async {
-        guard let fetchedMechanics: [Mechanic] = await NetworkingManager.shared.downloadData(fromURL: "http://localhost:8080/getmechanics") else { return }
-        mechanics = fetchedMechanics
+    func fetchMechanics(){
+        Task{
+            guard let fetchedMechanics: [Mechanic] = await NetworkingManager.shared.downloadData(fromURL: "http://localhost:8080/getmechanics") else { return }
+            mechanics = fetchedMechanics
+        }
     }
+    
+    func fetchCategories(){
+        Task{
+            guard let fetchedCategories: [Category] = await NetworkingManager.shared.downloadData(fromURL: "http://localhost:8080/getcategories") else { return }
+            categories = fetchedCategories
+        }
+    }
+    
     
     func onFilterClicked(activeSheet: ActiveSheet){
         state.isPresented = true
