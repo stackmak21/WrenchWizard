@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ListingItem: View {
-//    test
+
     let mechanic: Mechanic
     
     var body: some View {
