@@ -39,7 +39,7 @@ private struct HomeContent: View {
                     Text("All Services")
                         .font(Typography.semiBold(size: 24))
                         .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding()
+                        .padding([.leading, .trailing, .top])
                     
                     categoriesGrid(selectionSize: buttonSize(proxy: container))
                     
@@ -52,15 +52,14 @@ private struct HomeContent: View {
                         LazyHStack{
                             ForEach(vm.mechanics, id: \.self.id){ mechanic in
                                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                                    ListingItem()
+                                    ListingItem(mechanic: mechanic)
                                 })
-                                .buttonStyle(ItemsButtonStyle())
-                                .padding()
+                                .buttonStyle(ListingItemButtonStyle())
+                                .padding(.horizontal)
                             }
                             
                         }
                     }
-                    Spacer().frame(height: 300)
                 }
             }
             .ignoresSafeArea()
@@ -88,8 +87,17 @@ private struct HomeContent: View {
                     
                 }, label: {
                     VStack(spacing: 0) {
+                        Spacer().frame(height: 16)
+                        image(id: category.id)
+                            .resizable()
+                            .frame(width: 48, height: 48, alignment: .top)
+                            .frame(alignment: .bottom)
+                        
                         Text(category.title.capitalized)
+                            .lineLimit(2)
+                            .frame(minHeight: 40)
                             .multilineTextAlignment(.center)
+                        
                     }
                     .frame(width: size, height: size)
                 })
@@ -99,8 +107,34 @@ private struct HomeContent: View {
     }
     
     private func buttonSize(proxy: GeometryProxy) -> CGFloat {
-        return (proxy.size.width - proxy.safeAreaInsets.leading - proxy.safeAreaInsets.trailing - 170) / 2.0
+        return (proxy.size.width - proxy.safeAreaInsets.leading - proxy.safeAreaInsets.trailing - 160) / 2.0
     }
+    
+    private func image(id: Int) -> Image {
+        switch id {
+        case 1:
+            Image(uiImage: Asset.Illustrations.offers.image)
+        case 2:
+            Image(uiImage: Asset.Illustrations.urgentJobsRepair.image)
+        case 3:
+            Image(uiImage: Asset.Illustrations.renovation.image)
+        case 4:
+            Image(uiImage: Asset.Illustrations.constructionTradeJobs.image)
+        case 5:
+            Image(uiImage: Asset.Illustrations.removalsStorage.image)
+        case 6:
+            Image(uiImage: Asset.Illustrations.cleaning.image)
+        case 7:
+            Image(uiImage: Asset.Illustrations.householdAppliances.image)
+        case 8:
+            Image(uiImage: Asset.Illustrations.windowsAndDoors.image)
+        case 9:
+            Image(uiImage: Asset.Illustrations.events.image)
+        default:
+            Image(uiImage: Asset.Illustrations.events.image)
+        }
+    }
+   
 }
 
 #Preview {

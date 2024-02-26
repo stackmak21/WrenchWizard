@@ -19,7 +19,7 @@ struct PickerButtonStyle: ButtonStyle {
             .clipShape(RoundedRectangle(cornerRadius: 8))
             .foregroundColor(foregroundColor(configuration))
             .overlay(RoundedRectangle(cornerRadius: 8).stroke(
-                style.colors.accentColor(isEnabled: isEnabled, isFocused: configuration.isPressed, isError: false),
+                style.colors.accentColor(isEnabled: isEnabled, isFocused: configuration.isPressed),
                 lineWidth: 1
             ))
     }

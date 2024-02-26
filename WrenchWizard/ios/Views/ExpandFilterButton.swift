@@ -35,18 +35,12 @@ struct ExpandFilterButton: View {
             .animation(.none, value: isExpanded)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
         })
-        .buttonStyle(ExpandFilterButtonStyle())
+        .buttonStyle(ExpandFilterButtonStyle(isEnabled: true))
         .frame(idealWidth: 48, idealHeight: 48)
     }
 }
 
-private struct ExpandFilterButtonStyle: ButtonStyle {
-    func makeBody(configuration: Configuration) -> some View {
-        configuration.label
-            .background(configuration.isPressed ? Color.primary : Color.primary)
-            .cornerRadius(8)
-    }
-}
+
 
 struct ExpandFilterButton_Previews: PreviewProvider {
     static var previews: some View {

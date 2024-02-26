@@ -33,7 +33,7 @@ struct Mechanic: Identifiable, Codable, Hashable {
     let firstName: String
     let lastName: String
     let category: MechanicCategory
-    let rating: Int
+    let rating: Double
     let company: String
     let phone: String
     let address: String

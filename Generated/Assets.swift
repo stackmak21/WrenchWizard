@@ -25,6 +25,18 @@ internal typealias AssetImageTypeAlias = ImageAsset.Image
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 internal enum Asset {
   internal static let accentColor = ColorAsset(name: "AccentColor")
+  internal enum Illustrations {
+    internal static let image = ImageAsset(name: "Image")
+    internal static let cleaning = ImageAsset(name: "cleaning")
+    internal static let constructionTradeJobs = ImageAsset(name: "construction_trade_jobs ")
+    internal static let events = ImageAsset(name: "events")
+    internal static let householdAppliances = ImageAsset(name: "household_appliances")
+    internal static let offers = ImageAsset(name: "offers")
+    internal static let removalsStorage = ImageAsset(name: "removals_storage")
+    internal static let renovation = ImageAsset(name: "renovation")
+    internal static let urgentJobsRepair = ImageAsset(name: "urgent_jobs_repair")
+    internal static let windowsAndDoors = ImageAsset(name: "windows_and_doors")
+  }
   internal enum Theme {
     internal enum Button {
       internal static let primaryDisabledBackground = ColorAsset(name: "primary_disabled_background")
@@ -39,16 +51,17 @@ internal enum Asset {
       internal static let navigationBarForeground = ColorAsset(name: "navigation_bar_foreground")
     }
     internal enum TextField {
-      internal static let image = ImageAsset(name: "Image")
       internal static let disabledAccent = ColorAsset(name: "disabled_accent")
       internal static let disabledBackground = ColorAsset(name: "disabled_background")
+      internal static let disabledBorder = ColorAsset(name: "disabled_border")
       internal static let disabledForeground = ColorAsset(name: "disabled_foreground")
       internal static let focusedAccent = ColorAsset(name: "focused_accent")
       internal static let focusedBackground = ColorAsset(name: "focused_background")
+      internal static let focusedBorder = ColorAsset(name: "focused_border")
       internal static let focusedForeground = ColorAsset(name: "focused_foreground")
-      internal static let helper = ColorAsset(name: "helper")
       internal static let normalAccent = ColorAsset(name: "normal_accent")
       internal static let normalBackground = ColorAsset(name: "normal_background")
+      internal static let normalBorder = ColorAsset(name: "normal_border")
       internal static let normalForeground = ColorAsset(name: "normal_foreground")
     }
     internal static let contentBackgroundPrimary = ColorAsset(name: "content_Background_Primary")

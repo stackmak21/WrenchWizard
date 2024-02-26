@@ -13,7 +13,7 @@ struct ListingItem: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 0, content: {
-                Image("Image")
+            Asset.Illustrations.image.swiftUIImage
                     .resizable()
                     .frame(width: .infinity, height: 140)
             VStack(alignment: .leading){
@@ -23,7 +23,7 @@ struct ListingItem: View {
                     VStack(alignment: .leading){
                         Text(mechanic.lastName)
                             .font(Typography.medium(size: 14))
-                        Text("Electec")
+                        Text(mechanic.company)
                             .font(Typography.light(size: 12))
                     }
                     Spacer()
@@ -43,14 +43,7 @@ struct ListingItem: View {
                 
                 Spacer().frame(height: 12)
                 HStack(alignment: .bottom){
-                    Image(systemName: "star.fill")
-                        .foregroundColor(.yellow)
-                    Text("4.9")
-                        .font(Typography.semiBold(size: 16))
-                        .foregroundColor(.yellow)
-                    Text("(539)")
-                        .font(Typography.semiBold(size: 14))
-                        .foregroundColor(.gray)
+                    rating
                     Spacer()
                     Text("From")
                         .font(Typography.light(size: 12))
@@ -66,6 +59,17 @@ struct ListingItem: View {
         
         
         }
+    
+    @ViewBuilder var rating: some View {
+        Image(systemName: "star.fill")
+            .foregroundColor(.yellow)
+        Text("4.9")
+            .font(Typography.semiBold(size: 16))
+            .foregroundColor(.yellow)
+        Text("(539)")
+            .font(Typography.semiBold(size: 14))
+            .foregroundColor(.gray)
+    }
         
         
         
@@ -74,10 +78,10 @@ struct ListingItem: View {
 
 #Preview {
     Button(action: {print("fdfdfd")}, label: {
-        ListingItem()
+        ListingItem(mechanic: Mechanic(id: UUID(), firstName: "paris", lastName: "makris", category: .electrician, rating: 4.5, company: "electec", phone: "6980376044", address: "xanthoudaki 7", city: "chania", postalCode: "73100", subCategoryId: 2))
             
     })
-    .buttonStyle(ItemsButtonStyle())
+    .buttonStyle(ListingItemButtonStyle())
         
     
 }

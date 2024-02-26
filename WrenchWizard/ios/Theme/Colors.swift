@@ -30,13 +30,15 @@ extension Color{
         static let disabledAccent = Asset.Theme.TextField.disabledAccent.color.toSwiftUi()
         static let disabledBackground = Asset.Theme.TextField.disabledBackground.color.toSwiftUi()
         static let disabledForeground = Asset.Theme.TextField.disabledForeground.color.toSwiftUi()
+        static let disabledBorder = Asset.Theme.TextField.disabledBorder.color.toSwiftUi()
         static let focusedAccent = Asset.Theme.TextField.focusedAccent.color.toSwiftUi()
         static let focusedBackground = Asset.Theme.TextField.focusedBackground.color.toSwiftUi()
         static let focusedForeground = Asset.Theme.TextField.focusedForeground.color.toSwiftUi()
-        static let helper = Asset.Theme.TextField.helper.color.toSwiftUi()
+        static let focusedBorder = Asset.Theme.TextField.focusedBorder.color.toSwiftUi()
         static let normalAccent = Asset.Theme.TextField.normalAccent.color.toSwiftUi()
         static let normalBackground = Asset.Theme.TextField.normalBackground.color.toSwiftUi()
         static let normalForeground = Asset.Theme.TextField.normalForeground.color.toSwiftUi()
+        static let normalBorder = Asset.Theme.TextField.normalBorder.color.toSwiftUi()
     }
     
 }
