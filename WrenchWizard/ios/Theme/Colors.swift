@@ -11,6 +11,15 @@ import SwiftUI
 
 extension Color{
     
+   
+    static let primaryColor = Asset.Theme.Pallete.primaryColor.color.toSwiftUi()
+    
+    struct ContentBackground{
+            static let contentBackgroundPrimary = Asset.Theme.ContentBackground.contentBackgroundPrimary.color.toSwiftUi()
+            static let contentBackgroundSecondary = Asset.Theme.ContentBackground.contentBackgroundSecondary.color.toSwiftUi()
+    }
+
+    
     struct Button {
         static let primaryDisabledBackground = Asset.Theme.Button.primaryDisabledBackground.color.toSwiftUi()
         static let primaryDisabledForeground = Asset.Theme.Button.primaryDisabledForeground.color.toSwiftUi()
@@ -40,5 +49,9 @@ extension Color{
         static let normalForeground = Asset.Theme.TextField.normalForeground.color.toSwiftUi()
         static let normalBorder = Asset.Theme.TextField.normalBorder.color.toSwiftUi()
     }
+    
+    
+        
+    
     
 }

@@ -24,7 +24,6 @@ internal typealias AssetImageTypeAlias = ImageAsset.Image
 
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 internal enum Asset {
-  internal static let accentColor = ColorAsset(name: "AccentColor")
   internal enum Illustrations {
     internal static let image = ImageAsset(name: "Image")
     internal static let cleaning = ImageAsset(name: "cleaning")
@@ -46,9 +45,16 @@ internal enum Asset {
       internal static let primaryPressedBackground = ColorAsset(name: "primary_pressed_background")
       internal static let primaryPressedForeground = ColorAsset(name: "primary_pressed_foreground")
     }
+    internal enum ContentBackground {
+      internal static let contentBackgroundPrimary = ColorAsset(name: "content_background_primary")
+      internal static let contentBackgroundSecondary = ColorAsset(name: "content_background_secondary")
+    }
     internal enum NavigationBar {
       internal static let navigationBarBackground = ColorAsset(name: "navigation_bar_background")
       internal static let navigationBarForeground = ColorAsset(name: "navigation_bar_foreground")
+    }
+    internal enum Pallete {
+      internal static let primaryColor = ColorAsset(name: "primary_color")
     }
     internal enum TextField {
       internal static let disabledAccent = ColorAsset(name: "disabled_accent")
@@ -64,9 +70,6 @@ internal enum Asset {
       internal static let normalBorder = ColorAsset(name: "normal_border")
       internal static let normalForeground = ColorAsset(name: "normal_foreground")
     }
-    internal static let contentBackgroundPrimary = ColorAsset(name: "content_Background_Primary")
-    internal static let contentBackgroundSecondary = ColorAsset(name: "content_Background_Secondary")
-    internal static let primary = ColorAsset(name: "primary")
   }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name

@@ -18,7 +18,7 @@ struct ExpandFilterButton: View {
             ZStack(alignment: .leading) {
                 Image(systemName: isExpanded ? "xmark" : "line.3.horizontal.decrease")
                     .resizable()
-                    .foregroundColor(isExpanded ? Color.contentBackgroundPrimary : Color.white)
+                    .foregroundColor(isExpanded ? Color.ContentBackground.contentBackgroundPrimary : Color.white)
                     .frame(width: isExpanded ? 12 : 18, height: 12)
                 
                 if appliedFilters > 0 && !isExpanded {

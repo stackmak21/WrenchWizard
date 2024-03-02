@@ -20,7 +20,7 @@ struct HomeScreen: View {
 
 private struct HomeContent: View {
     @ObservedObject var vm: HomeViewModel
-    
+    let navigator = NavigationDeck()
     var body: some View{
         GeometryReader{ container in
             VStack(alignment: .leading, spacing: 0){
@@ -28,13 +28,10 @@ private struct HomeContent: View {
                     .padding(.top, container.safeAreaInsets.top)
                     .padding(.leading, container.safeAreaInsets.leading)
                     .padding(.trailing, container.safeAreaInsets.trailing)
-                    .background(Color.contentBackgroundSecondary.shadow(length: .long))
+                    .background(Color.ContentBackground.contentBackgroundSecondary.shadow(length: .long))
                     .frame(alignment: .top)
                     .zIndex(1)
-                
-                
-                
-                
+   
                 ScrollView(showsIndicators: false){
                     Text("All Services")
                         .font(Typography.semiBold(size: 24))
@@ -42,6 +39,7 @@ private struct HomeContent: View {
                         .padding([.leading, .trailing, .top])
                     
                     categoriesGrid(selectionSize: buttonSize(proxy: container))
+                        .padding(.bottom)
                     
                     Text("Recommended Mechanics")
                         .font(Typography.semiBold(size: 24))
@@ -62,19 +60,15 @@ private struct HomeContent: View {
                     }
                 }
             }
+            .background(Color.ContentBackground.contentBackgroundSecondary)
             .ignoresSafeArea()
             .onAppear(){
                 vm.fetchCategories()
                 vm.fetchMechanics()
             }
-            .sheet(isPresented: $vm.state.isPresented, content: {
-                switch vm.state.activeSheet{
-                case .mechanicsFilter:
-                    MechanicPickerSheet(viewModel: vm)
-                case .personFilter:
-                    Text("Person")
-                }
-            })
+            .sheet(item: $vm.category) { category in
+                
+            }
         }
     }
     
@@ -84,7 +78,7 @@ private struct HomeContent: View {
         ) {
             ForEach(vm.categories, id: \.self) { category in
                 Button(action: {
-                    
+                    navigator.navigate(navigetionDirection: NavigationDirection(command: .subCategories))
                 }, label: {
                     VStack(spacing: 0) {
                         Spacer().frame(height: 16)

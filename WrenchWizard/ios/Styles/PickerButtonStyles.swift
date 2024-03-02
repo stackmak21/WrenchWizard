@@ -34,14 +34,3 @@ struct PickerButtonStyle: ButtonStyle {
     }
 }
 
-struct ClearActionButtonStyle: ButtonStyle {
-    
-    func makeBody(configuration: Configuration) -> some View {
-        configuration.label
-            .padding(6)
-            .foregroundColor(configuration.isPressed ? Color.black.opacity(0.3) : Color.black)
-            .padding(2)
-            .background(configuration.isPressed ? Color.contentBackgroundPrimary.opacity(0.3) : Color.contentBackgroundPrimary)
-            .clipShape(Circle())
-    }
-}

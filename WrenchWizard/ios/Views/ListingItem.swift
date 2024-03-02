@@ -15,7 +15,7 @@ struct ListingItem: View {
         VStack(alignment: .leading, spacing: 0, content: {
             Asset.Illustrations.image.swiftUIImage
                     .resizable()
-                    .frame(width: .infinity, height: 140)
+                    .frame(maxWidth: .infinity, maxHeight: 170)
             VStack(alignment: .leading){
                 HStack{
                     Circle()
@@ -37,7 +37,6 @@ struct ListingItem: View {
                     .font(Typography.regular(size: 12))
                     .lineLimit(2)
                     .frame(minHeight: 30)
-                    .frame(width: .infinity, alignment: .leading)
                     .multilineTextAlignment(.leading)
                     
                 

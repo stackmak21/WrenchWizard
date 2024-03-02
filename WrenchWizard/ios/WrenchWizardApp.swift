@@ -10,6 +10,7 @@ import SwiftUI
 @main
 struct WrenchWizardApp: App {
     
+    private let coordinator = Coordinator()
     
     init() {
         configureNavigationBar()
@@ -17,9 +18,10 @@ struct WrenchWizardApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NavigationView{
-                TabView()
-            }
+            HostView(coordinator: coordinator)
+//                TabView()
+                
+            
             
         }
     }

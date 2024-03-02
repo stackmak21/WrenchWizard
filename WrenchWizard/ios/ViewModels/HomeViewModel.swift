@@ -9,10 +9,16 @@ import Foundation
 
 @MainActor
 class HomeViewModel: ObservableObject{
+    
     @Published var state = State()
     @Published var searchTerm = ""
     @Published var mechanics: [Mechanic] = [Mechanic]()
     @Published var categories: [Category] = [Category]()
+    @Published var category: Category? = nil
+    @Published var subCategories: [SubCategory]? = nil
+    @Published var subCategory: SubCategory? = nil
+    
+    
     
     func fetchMechanics(){
         Task{
@@ -25,6 +31,13 @@ class HomeViewModel: ObservableObject{
         Task{
             guard let fetchedCategories: [Category] = await NetworkingManager.shared.downloadData(fromURL: "http://localhost:8080/getcategories") else { return }
             categories = fetchedCategories
+        }
+    }
+    
+    func fetchSubCategories(id: Int){
+        Task{
+            guard let fetchedSubCategories: [SubCategory] = await NetworkingManager.shared.downloadData(fromURL: "http://localhost:8080/getsubcategories/\(id)") else { return }
+            subCategories = fetchedSubCategories
         }
     }
     
@@ -53,6 +66,7 @@ class HomeViewModel: ObservableObject{
 enum ActiveSheet{
     case mechanicsFilter
     case personFilter
+    case subCategories
 }
 
 

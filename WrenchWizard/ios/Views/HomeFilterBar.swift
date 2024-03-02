@@ -41,7 +41,7 @@ struct HomeFilterBar: View {
                     },set: {
                         vm.searchTerm = $0
                     }),
-            style: .outlined,
+            style: .outlinedSmall,
             trailingContent: {
                 if !vm.searchTerm.isEmpty{
                     Button(action: {
@@ -60,11 +60,14 @@ struct HomeFilterBar: View {
     @ViewBuilder var expandedFilters: some View {
         HStack {
             PickerButton(
-                isPlaceholderVisible: false,
-                canClear: false,
+                isPlaceholderVisible: true,
+                canClear: true,
                 onClick: { vm.onFilterClicked(activeSheet: .mechanicsFilter) },
                 onClearClick: {},
-                placeholder: { EmptyView() },
+                placeholder: {
+                    PickerButtonPlaceholder(text: "Select Jobs")
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                },
                 content: {
                     Text("find mechanic")
                         .font(Typography.regular(size: 14))
@@ -81,7 +84,7 @@ struct HomeFilterBar: View {
                 onClick: { vm.onFilterClicked(activeSheet: .personFilter) },
                 onClearClick: { },
                 placeholder: {
-                    PickerButtonPlaceholder(text: "find jobs")
+                    PickerButtonPlaceholder(text: "")
                         .frame(maxWidth: .infinity, alignment: .leading)
                 },
                 content: {

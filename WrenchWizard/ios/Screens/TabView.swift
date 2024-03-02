@@ -66,7 +66,7 @@ struct TabView: View {
                     Spacer()
                     TabItem(
                         title: Strings.search,
-                        image: Image(systemName: "magnifyingglass"),
+                        image: Image(systemName: "plus.square.fill"),
                         isNotificationVisible: false,
                         isSelected: viewModel.activeScreen == .search
                     )
@@ -77,7 +77,7 @@ struct TabView: View {
                     TabItem(
                         title: Strings.account,
                         image: Image(systemName: "person.fill"),
-                        isNotificationVisible: false,
+                        isNotificationVisible: true,
                         isSelected: viewModel.activeScreen == .account
                     )
                     .onTapGesture {
@@ -88,7 +88,7 @@ struct TabView: View {
                 .padding(.leading, 16 + container.safeAreaInsets.leading)
                 .padding(.trailing, 16 + container.safeAreaInsets.trailing)
                 .padding(.bottom, container.safeAreaInsets.bottom)
-                .background(Color.contentBackgroundSecondary.shadow(length: .short))
+                .background(Color.ContentBackground.contentBackgroundSecondary.shadow(length: .short))
             }
             .edgesIgnoringSafeArea([.leading, .trailing, .bottom])
         }
@@ -121,9 +121,9 @@ private struct TabItem: View {
     
     private var color: Color {
         if isSelected {
-            return Color.primary
+            return Color.primaryColor
         } else {
-            return Color.primary.opacity(0.25)
+            return Color.primaryColor.opacity(0.5)
         }
     }
 }

@@ -8,8 +8,8 @@
 import Foundation
 
 struct Category: Identifiable, Codable, Hashable {
-    var id: Int
-    var title: String
+    let id: Int
+    let title: String
 
     enum CodingKeys: String, CodingKey {
         case id = "categoryid"
