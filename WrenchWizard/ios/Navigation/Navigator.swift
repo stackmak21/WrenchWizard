@@ -2,52 +2,27 @@
 //  Navigator.swift
 //  WrenchWizard
 //
-//  Created by Paris Makris on 2/3/24.
+//  Created by Paris Makris on 3/3/24.
 //
 
 import Foundation
+import Combine
 
-protocol Navigator {
+class Navigator: ObservableObject {
     
-    func navigate(navigetionDirection: NavigationDirection)
+    let directionSubject = PassthroughSubject<NavigationDirection, Never>()
     
-    func getDirections() -> [NavigationDirection]
-    
-}
-
-protocol NavigationRoute {
-    
-    func canRoute(navigationCommand: NavigationItem) -> Bool
-    
-    func navigate(coordinator: Coordinator, navigationCommand: NavigationItem)
-    
-}
-
-extension Navigator {
-    
-    func setOnDirectionReceivedListener() {
-        var directions = getDirections()
-//        if let directions.count > 0{
-//            onDirection(directions)
-//        }
-        guard let direction = directions.first else { return }
-        navigateAsync(command: direction.command)
-    }
-    
-    func navigateAsync(command: NavigationItem) {
-        let navigationDirection = NavigationDirection(command: command)
-        navigate(navigetionDirection: navigationDirection)
+    func sendCommand(_ command: NavigationCommand) {
+        directionSubject.send(NavigationDirection(command: command))
     }
 }
 
-
-
-struct NavigationDirection{
-    var command: NavigationItem
+struct NavigationDirection {
+    let command: NavigationCommand
 }
 
 
-enum NavigationItem{
+enum NavigationCommand{
     case home
     case subCategories
 }

@@ -8,12 +8,12 @@
 import Foundation
 
 class SubCategoriesRoute: NavigationRoute {
-    func canRoute(navigationCommand: NavigationItem) -> Bool {
+    
+    func canRoute(navigationCommand: NavigationCommand) -> Bool {
         return navigationCommand == .subCategories
     }
     
-    func navigate(coordinator: Coordinator, navigationCommand: NavigationItem) {
-
-        coordinator.stack.push(.subCategories)
+    func navigate(coordinator: Coordinator, navigationCommand: NavigationCommand) {
+        coordinator.stack.presentSheet(.subCategories)
     }
 }

@@ -11,18 +11,20 @@ import SwiftUI
 struct WrenchWizardApp: App {
     
     private let coordinator = Coordinator()
+    private let navigator = Navigator()
+    private var router : NavigationRouter
+    private let viewModel: NavigationViewModel
     
     init() {
+        router = NavigationRouter(coordinator: coordinator, featureRoutes: NavigationRouter.routes)
+        viewModel = NavigationViewModel(navigator: navigator, router: router)
         configureNavigationBar()
     }
     
     var body: some Scene {
         WindowGroup {
-            HostView(coordinator: coordinator)
-//                TabView()
-                
-            
-            
+            HostView(coordinator: coordinator, viewModel: viewModel)
+                .environmentObject(navigator)
         }
     }
     

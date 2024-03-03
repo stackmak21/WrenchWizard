@@ -20,7 +20,8 @@ struct HomeScreen: View {
 
 private struct HomeContent: View {
     @ObservedObject var vm: HomeViewModel
-    let navigator = NavigationDeck()
+    @EnvironmentObject var navigator: Navigator
+    
     var body: some View{
         GeometryReader{ container in
             VStack(alignment: .leading, spacing: 0){
@@ -78,7 +79,13 @@ private struct HomeContent: View {
         ) {
             ForEach(vm.categories, id: \.self) { category in
                 Button(action: {
-                    navigator.navigate(navigetionDirection: NavigationDirection(command: .subCategories))
+                    navigator.sendCommand(.subCategories)
+//                    navigator.navigate(navigationDirection: NavigationDirection(command: .subCategories, settings: .init(delay: 2)))
+//                    navigator.setOnDirectionReceivedListener { direction in
+//                        SubCategoriesRoute().navigate(coordinator: Coordinator(), navigationCommand: .subCategories)
+//
+//                    }
+                    
                 }, label: {
                     VStack(spacing: 0) {
                         Spacer().frame(height: 16)

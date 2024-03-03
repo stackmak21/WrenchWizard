@@ -11,29 +11,6 @@ import FlowStacks
 
 typealias NavigationStack = Routes<Screen>
 
-class NavigationDeck: Navigator {
-    
-    func getDirections() -> [NavigationDirection] {
-        return directions
-    }
-    
-    
-    @Published var directions: [NavigationDirection] = []
-    
-    func navigate(navigetionDirection: NavigationDirection) {
-        var directionsList: [NavigationDirection] = []
-        directionsList.append(navigetionDirection)
-        sendDirections(newDirections: directionsList)
-    }
-    
-    func sendDirections(newDirections: [NavigationDirection]){
-        directions = newDirections
-//        setOnDirectionReceivedListener()
-    }
-    
-    
-}
-
 enum Screen: Equatable {
     case home
     case subCategories
@@ -51,6 +28,7 @@ class Coordinator: ObservableObject {
 
 struct HostView: View {
     @ObservedObject var coordinator: Coordinator
+    let viewModel: NavigationViewModel
     
     var body: some View{
         Router($coordinator.stack) { screen, _ in
@@ -60,7 +38,7 @@ struct HostView: View {
             case .subCategories:
                 SubCategoriesPickerSheet()
             }
-        
         }
+        .environmentObject(viewModel)
     }
 }

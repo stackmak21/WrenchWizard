@@ -5,36 +5,27 @@
 //  Created by Paris Makris on 2/3/24.
 //
 
-import Foundation
-
+import SwiftUI
 
 struct NavigationRouter {
+    private let coordinator: Coordinator
+    private let featureRoutes: [NavigationRoute]
     
     static var routes: [NavigationRoute] {
         return [
-            SubCategoriesRoute()
+            [SubCategoriesRoute()]
         ].flatMap({ $0 })
     }
-    
-    private let coordinator: Coordinator
-    private let featureRoutes: [NavigationRoute]
     
     init(coordinator: Coordinator, featureRoutes: [NavigationRoute]) {
         self.coordinator = coordinator
         self.featureRoutes = featureRoutes
     }
     
-//    func listenToNavigationCommands(from featuresNavigator: Navigator) {
-//        featuresNavigator.setOnDirectionReceivedListener(onDirection: onCommandReceived)
-//    }
-    
-    private func onCommandReceived(navigationDirection: NavigationDirection) {
-        if let featureRoute = featureRoutes.first(where: {$0.canRoute(navigationCommand: navigationDirection.command)}) {
-            featureRoute.navigate(coordinator: coordinator, navigationCommand: navigationDirection.command)
-        } else {
-            
+    func handleNavigationCommand(_ command: NavigationCommand) {
+        if let featureRoute = featureRoutes.first(where: { $0.canRoute(navigationCommand: command) }) {
+            featureRoute.navigate(coordinator: coordinator, navigationCommand: command)
         }
     }
-    
 }
 
