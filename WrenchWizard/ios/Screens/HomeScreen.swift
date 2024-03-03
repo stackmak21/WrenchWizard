@@ -79,7 +79,7 @@ private struct HomeContent: View {
         ) {
             ForEach(vm.categories, id: \.self) { category in
                 Button(action: {
-                    navigator.sendCommand(.subCategories)
+                    navigator.sendCommand(.subCategories(data: "elaaaaaa"))
 //                    navigator.navigate(navigationDirection: NavigationDirection(command: .subCategories, settings: .init(delay: 2)))
 //                    navigator.setOnDirectionReceivedListener { direction in
 //                        SubCategoriesRoute().navigate(coordinator: Coordinator(), navigationCommand: .subCategories)

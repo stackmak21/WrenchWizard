@@ -13,7 +13,7 @@ typealias NavigationStack = Routes<Screen>
 
 enum Screen: Equatable {
     case home
-    case subCategories
+    case subCategories(data: String)
 }
 
 
@@ -35,8 +35,8 @@ struct HostView: View {
             switch screen {
             case .home:
                 TabView()
-            case .subCategories:
-                SubCategoriesPickerSheet()
+            case .subCategories(let data):
+                SubCategoriesPickerSheet(data: data)
             }
         }
         .environmentObject(viewModel)

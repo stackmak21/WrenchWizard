@@ -11,11 +11,12 @@ struct SubCategoriesPickerSheet: View {
     
     @ObservedObject var vm = HomeViewModel()
     
+    var data: String
     
     
     var body: some View {
         PickerContent(
-            title: "Renovations",
+            title: data,
             isSearchAllowed: false,
             searchTerm: $vm.state.searchTerm,
             items: vm.categories) { subCategory in

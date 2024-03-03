@@ -24,5 +24,5 @@ struct NavigationDirection {
 
 enum NavigationCommand{
     case home
-    case subCategories
+    case subCategories(data: String)
 }
