@@ -12,8 +12,12 @@ import FlowStacks
 typealias NavigationStack = Routes<Screen>
 
 enum Screen: Equatable {
+    static func == (lhs: Screen, rhs: Screen) -> Bool {
+        return true
+    }
+    
     case home
-    case subCategories(data: String)
+    case subCategories(vm: HomeViewModel)
 }
 
 
@@ -28,17 +32,16 @@ class Coordinator: ObservableObject {
 
 struct HostView: View {
     @ObservedObject var coordinator: Coordinator
-    let viewModel: NavigationViewModel
     
     var body: some View{
         Router($coordinator.stack) { screen, _ in
             switch screen {
             case .home:
                 TabView()
-            case .subCategories(let data):
-                SubCategoriesPickerSheet(data: data)
+            case .subCategories(var vm):
+                SubCategoriesPickerSheet(vm: vm)
             }
         }
-        .environmentObject(viewModel)
+        
     }
 }

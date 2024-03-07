@@ -15,14 +15,10 @@ class Navigator: ObservableObject {
     func sendCommand(_ command: NavigationCommand) {
         directionSubject.send(NavigationDirection(command: command))
     }
+    
+    func goToBack(){
+        sendCommand(.goBack)
+    }
 }
 
-struct NavigationDirection {
-    let command: NavigationCommand
-}
 
-
-enum NavigationCommand{
-    case home
-    case subCategories(data: String)
-}

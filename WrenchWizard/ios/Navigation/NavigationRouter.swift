@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct NavigationRouter {
-    private let coordinator: Coordinator
-    private let featureRoutes: [NavigationRoute]
+    let coordinator: Coordinator
+    let featureRoutes: [NavigationRoute]
     
     static var routes: [NavigationRoute] {
         return [
+            systemRoutes,
             [SubCategoriesRoute()]
         ].flatMap({ $0 })
     }

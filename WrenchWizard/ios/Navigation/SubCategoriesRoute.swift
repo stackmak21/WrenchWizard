@@ -8,11 +8,8 @@
 import Foundation
 
 class SubCategoriesRoute: NavigationRoute {
-    
-    
-    
+
     func canRoute(navigationCommand: NavigationCommand) -> Bool {
-//        return navigationCommand == .subCategories
         if case .subCategories(_) = navigationCommand{
             return true
         }
@@ -20,8 +17,8 @@ class SubCategoriesRoute: NavigationRoute {
     }
     
     func navigate(coordinator: Coordinator, navigationCommand: NavigationCommand) {
-        if case .subCategories(let data) = navigationCommand {
-            coordinator.stack.presentSheet(.subCategories(data: data))
+        if case .subCategories(var vm) = navigationCommand {
+            coordinator.stack.presentSheet(.subCategories(vm: vm))
         }
     }
 }

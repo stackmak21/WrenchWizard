@@ -9,19 +9,20 @@ import SwiftUI
 
 struct SubCategoriesPickerSheet: View {
     
-    @ObservedObject var vm = HomeViewModel()
+    @ObservedObject var vm: HomeViewModel
     
-    var data: String
+//    var data: String
     
     
     var body: some View {
         PickerContent(
-            title: data,
+            title: vm.titleText,
             isSearchAllowed: false,
             searchTerm: $vm.state.searchTerm,
             items: vm.categories) { subCategory in
                 Text(subCategory.title)
             } onBackClicked: {
+                vm.navigator.goToBack()
                 
             }
 

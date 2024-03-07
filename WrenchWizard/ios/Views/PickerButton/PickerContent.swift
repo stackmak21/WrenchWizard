@@ -20,7 +20,11 @@ struct PickerContent<I, ItemContent>: View where I: Hashable, ItemContent: View 
         VStack(spacing: 0) {
             ZStack(alignment: .leading) {
                 if #available(iOS 15, *) {
-                    EmptyView()
+//                    EmptyView()
+                    Button(action: onBackClicked, label: {
+                        ToolbarImage(systemName: "chevron.backward")
+                            .padding(.all, 16)
+                    })
                 } else {
                     Button(action: onBackClicked, label: {
                         ToolbarImage(systemName: "chevron.backward")

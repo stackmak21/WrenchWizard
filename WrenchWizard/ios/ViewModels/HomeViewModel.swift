@@ -8,8 +8,11 @@
 import Foundation
 
 @MainActor
-class HomeViewModel: ObservableObject{
+class HomeViewModel: BaseViewModel{
     
+    
+    
+    @Published var titleText = "Change me"
     @Published var state = State()
     @Published var searchTerm = ""
     @Published var mechanics: [Mechanic] = [Mechanic]()

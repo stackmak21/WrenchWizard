@@ -20,7 +20,7 @@ struct HomeScreen: View {
 
 private struct HomeContent: View {
     @ObservedObject var vm: HomeViewModel
-    @EnvironmentObject var navigator: Navigator
+    
     
     var body: some View{
         GeometryReader{ container in
@@ -67,9 +67,7 @@ private struct HomeContent: View {
                 vm.fetchCategories()
                 vm.fetchMechanics()
             }
-            .sheet(item: $vm.category) { category in
-                
-            }
+            
         }
     }
     
@@ -79,7 +77,8 @@ private struct HomeContent: View {
         ) {
             ForEach(vm.categories, id: \.self) { category in
                 Button(action: {
-                    navigator.sendCommand(.subCategories(data: "elaaaaaa"))
+                    
+                    vm.navigator.sendCommand(.subCategories(vm: vm))
 //                    navigator.navigate(navigationDirection: NavigationDirection(command: .subCategories, settings: .init(delay: 2)))
 //                    navigator.setOnDirectionReceivedListener { direction in
 //                        SubCategoriesRoute().navigate(coordinator: Coordinator(), navigationCommand: .subCategories)

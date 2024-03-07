@@ -9,18 +9,29 @@ import Foundation
 import Combine
 
 class NavigationViewModel: ObservableObject {
-    private var cancellables = Set<AnyCancellable>()
-    private let navigator: Navigator
-    private let router: NavigationRouter
     
-    init(navigator: Navigator, router: NavigationRouter) {
-        self.navigator = navigator
-        self.router = router
+    static let shared: NavigationViewModel = NavigationViewModel()
         
-        navigator.directionSubject
-            .sink { [weak self] direction in
-                self?.router.handleNavigationCommand(direction.command)
-            }
-            .store(in: &cancellables)
-    }
+        private var cancellables = Set<AnyCancellable>()
+        let navigator: Navigator
+        let router: NavigationRouter
+        
+    private init(
+        navigator: Navigator = Navigator(),
+        router: NavigationRouter = NavigationRouter(coordinator: Coordinator(), featureRoutes: NavigationRouter.routes)
+    ) {
+            self.navigator = navigator
+            self.router = router
+            addSubscribers()
+        }
+        
+        private func addSubscribers(){
+            navigator.directionSubject
+                .sink { [weak self] direction in
+                    self?.router.handleNavigationCommand(direction.command)
+                }
+                .store(in: &cancellables)
+        }
+        
+        
 }
