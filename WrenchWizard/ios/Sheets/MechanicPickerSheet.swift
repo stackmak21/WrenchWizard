@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MechanicPickerSheet: View {
     
-    @ObservedObject  var viewModel: HomeViewModel
+    @ObservedObject  var viewModel: ExploreViewModel
     
     var body: some View {
         PickerContent(

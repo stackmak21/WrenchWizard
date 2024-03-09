@@ -7,14 +7,14 @@
 
 import Foundation
 
-struct SubCategory: Identifiable, Codable, Hashable {
-    let id: Int
-    let title: String
-    let categoryid: Int
+struct SubCategory: Codable, Identifiable, Hashable {
+    var id: Int
+    var title: String
+    var categoryId: Int
     
     enum CodingKeys: String, CodingKey {
-        case id = "subcategoryid"
+        case id = "subCategoryId"
         case title
-        case categoryid
+        case categoryId
     }
 }

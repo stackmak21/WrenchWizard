@@ -16,8 +16,9 @@ enum Screen: Equatable {
         return true
     }
     
+    
     case home
-    case subCategories(vm: HomeViewModel)
+    case subCategories(category: Category)
 }
 
 
@@ -37,9 +38,9 @@ struct HostView: View {
         Router($coordinator.stack) { screen, _ in
             switch screen {
             case .home:
-                TabView()
-            case .subCategories(var vm):
-                SubCategoriesPickerSheet(vm: vm)
+                HomeScreen()
+            case .subCategories(let category):
+                SubCategoriesPicker(category: category)
             }
         }
         

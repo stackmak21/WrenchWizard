@@ -2,74 +2,22 @@
 //  HomeViewModel.swift
 //  WrenchWizard
 //
-//  Created by Paris Makris on 11/2/24.
+//  Created by Paris Makris on 10/2/24.
 //
 
 import Foundation
 
-@MainActor
-class HomeViewModel: BaseViewModel{
+
+class HomeViewModel: ObservableObject {
+    @Published var activeScreen: ActiveScreen = .home
     
-    
-    
-    @Published var titleText = "Change me"
-    @Published var state = State()
-    @Published var searchTerm = ""
-    @Published var mechanics: [Mechanic] = [Mechanic]()
-    @Published var categories: [Category] = [Category]()
-    @Published var category: Category? = nil
-    @Published var subCategories: [SubCategory]? = nil
-    @Published var subCategory: SubCategory? = nil
-    
-    
-    
-    func fetchMechanics(){
-        Task{
-            guard let fetchedMechanics: [Mechanic] = await NetworkingManager.shared.downloadData(fromURL: "http://localhost:8080/getmechanics") else { return }
-            mechanics = fetchedMechanics
-        }
-    }
-    
-    func fetchCategories(){
-        Task{
-            guard let fetchedCategories: [Category] = await NetworkingManager.shared.downloadData(fromURL: "http://localhost:8080/getcategories") else { return }
-            categories = fetchedCategories
-        }
-    }
-    
-    func fetchSubCategories(id: Int){
-        Task{
-            guard let fetchedSubCategories: [SubCategory] = await NetworkingManager.shared.downloadData(fromURL: "http://localhost:8080/getsubcategories/\(id)") else { return }
-            subCategories = fetchedSubCategories
-        }
-    }
-    
-    
-    func onFilterClicked(activeSheet: ActiveSheet){
-        state.isPresented = true
-        state.activeSheet = activeSheet
-    }
-    
-    struct State{
-        var lists: String = ""
-        var filterState: FilterState = FilterState()
-        var isPresented: Bool = false
-        var activeSheet: ActiveSheet = .mechanicsFilter
-        var searchTerm: String = ""
-        var mechanics: [String] = ["plumber", "electrician", "car engine"]
-        
-    }
-    
-    struct FilterState{
-        var isExpanded: Bool = false
-    }
 }
 
 
-enum ActiveSheet{
-    case mechanicsFilter
-    case personFilter
-    case subCategories
+enum ActiveScreen: String {
+    case home = "home"
+    case search = "search"
+    case account = "account"
+    case mechanic = "listings"
+    
 }
-
-

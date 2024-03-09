@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct HomeFilterBar: View {
+struct ExploreFilterBar: View {
     
-    @ObservedObject var vm: HomeViewModel
-    private var state: HomeViewModel.State {
+    @ObservedObject var vm: ExploreViewModel
+    private var state: ExploreViewModel.State {
         vm.state
     }
     

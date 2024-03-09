@@ -20,11 +20,7 @@ struct PickerContent<I, ItemContent>: View where I: Hashable, ItemContent: View 
         VStack(spacing: 0) {
             ZStack(alignment: .leading) {
                 if #available(iOS 15, *) {
-//                    EmptyView()
-                    Button(action: onBackClicked, label: {
-                        ToolbarImage(systemName: "chevron.backward")
-                            .padding(.all, 16)
-                    })
+                    EmptyView()
                 } else {
                     Button(action: onBackClicked, label: {
                         ToolbarImage(systemName: "chevron.backward")
@@ -38,7 +34,7 @@ struct PickerContent<I, ItemContent>: View where I: Hashable, ItemContent: View 
                     .frame(maxWidth: .infinity, alignment: .center)
             }
             .frame(height: 53)
-            .background(Color.ContentBackground.contentBackgroundSecondary)
+            .background(Color.ContentBackground.contentBackgroundPrimary)
             
 //            if isSearchAllowed {
 //                Spacer().frame(height: 16)
@@ -55,7 +51,7 @@ struct PickerContent<I, ItemContent>: View where I: Hashable, ItemContent: View 
                 LazyVStack(spacing: 0) {
                     ForEach(items, id: \.self) { item in
                         itemContent(item)
-                        Divider().padding(.horizontal, 24)
+                        Divider().padding(.horizontal, 8)
                     }
                 }
             }
