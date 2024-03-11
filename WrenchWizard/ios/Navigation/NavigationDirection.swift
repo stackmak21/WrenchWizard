@@ -15,5 +15,7 @@ struct NavigationDirection {
 enum NavigationCommand{
     case home
     case subCategories(category:Category)
+    case subCategory
     case goBack
+    case goToRoot
 }

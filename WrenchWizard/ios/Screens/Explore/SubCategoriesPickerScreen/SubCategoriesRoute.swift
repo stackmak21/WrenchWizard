@@ -18,7 +18,7 @@ class SubCategoriesRoute: NavigationRoute {
     
     func navigate(coordinator: Coordinator, navigationCommand: NavigationCommand) {
         if case .subCategories(let category) = navigationCommand {
-            coordinator.stack.presentSheet(.subCategories(category: category))
+            coordinator.stack.push(.subCategories(category: category))
         }
     }
 }

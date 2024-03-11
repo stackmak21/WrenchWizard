@@ -98,5 +98,404 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "01921FB4-B4D9-4E28-8106-AFF1767EDA2C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WrenchWizard/ios/Navigation/Coordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "52EBC937-4578-4ACB-8A9E-C8DC974DD55F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WrenchWizard/ios/Navigation/Coordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "281E4838-D309-455F-9877-7EBFE3B3FB46"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WrenchWizard/ios/Screens/Explore/SubCategoryRoute.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "canRoute(navigationCommand:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "281E4838-D309-455F-9877-7EBFE3B3FB46 - 272b49cb30f7f4d2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WrenchWizard.SubCategorysRoute.canRoute(navigationCommand: WrenchWizard.NavigationCommand) -&gt; Swift.Bool"
+                  moduleName = "WrenchWizard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paresmakres/Documents/GitHub/WrenchWizard/WrenchWizard/ios/Screens/Explore/SubCategoryRoute.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  uuid = "281E4838-D309-455F-9877-7EBFE3B3FB46 - 247ec063b096ccc1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WrenchWizard.SubCategoryRoute.canRoute(navigationCommand: WrenchWizard.NavigationCommand) -&gt; Swift.Bool"
+                  moduleName = "WrenchWizard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paresmakres/Documents/GitHub/WrenchWizard/WrenchWizard/ios/Screens/Explore/SubCategoryRoute.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "128">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9BCF3580-B9CD-4BC6-BE5D-18CD1E6A2CC5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WrenchWizard/ios/Screens/Explore/SubCategoryRoute.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "canRoute(navigationCommand:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9BCF3580-B9CD-4BC6-BE5D-18CD1E6A2CC5 - 272b49cb30f7f490"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WrenchWizard.SubCategorysRoute.canRoute(navigationCommand: WrenchWizard.NavigationCommand) -&gt; Swift.Bool"
+                  moduleName = "WrenchWizard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paresmakres/Documents/GitHub/WrenchWizard/WrenchWizard/ios/Screens/Explore/SubCategoryRoute.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  uuid = "9BCF3580-B9CD-4BC6-BE5D-18CD1E6A2CC5 - 247ec063b096cc83"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WrenchWizard.SubCategoryRoute.canRoute(navigationCommand: WrenchWizard.NavigationCommand) -&gt; Swift.Bool"
+                  moduleName = "WrenchWizard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paresmakres/Documents/GitHub/WrenchWizard/WrenchWizard/ios/Screens/Explore/SubCategoryRoute.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "156">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DDE1B8E3-1474-4781-804D-F75C5A8E777B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WrenchWizard/ios/Screens/Explore/SubCategoryRoute.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "navigate(coordinator:navigationCommand:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DDE1B8E3-1474-4781-804D-F75C5A8E777B - be4a98b668d60e64"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WrenchWizard.SubCategorysRoute.navigate(coordinator: WrenchWizard.Coordinator, navigationCommand: WrenchWizard.NavigationCommand) -&gt; ()"
+                  moduleName = "WrenchWizard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paresmakres/Documents/GitHub/WrenchWizard/WrenchWizard/ios/Screens/Explore/SubCategoryRoute.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "192">
+               </Location>
+               <Location
+                  uuid = "DDE1B8E3-1474-4781-804D-F75C5A8E777B - be4a98b668d60e64"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WrenchWizard.SubCategorysRoute.navigate(coordinator: WrenchWizard.Coordinator, navigationCommand: WrenchWizard.NavigationCommand) -&gt; ()"
+                  moduleName = "WrenchWizard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paresmakres/Documents/GitHub/WrenchWizard/WrenchWizard/ios/Screens/Explore/SubCategoryRoute.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "DDE1B8E3-1474-4781-804D-F75C5A8E777B - ab6610179b19e0e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WrenchWizard.SubCategoryRoute.navigate(coordinator: WrenchWizard.Coordinator, navigationCommand: WrenchWizard.NavigationCommand) -&gt; ()"
+                  moduleName = "WrenchWizard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paresmakres/Documents/GitHub/WrenchWizard/WrenchWizard/ios/Screens/Explore/SubCategoryRoute.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "184">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E812A63E-FCB4-4633-99DA-CA61976C4E72"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WrenchWizard/ios/Views/DefinitionPickerItem.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3DF81F18-BBDB-499B-854A-91CC3EC7388A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WrenchWizard/ios/Navigation/Navigator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "sendCommand(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2A5BE8A2-F41E-4D07-873E-8E7A369FAA4F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WrenchWizard/ios/Navigation/Navigator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "sendCommand(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4D4C94D4-8C4C-4EBC-B85B-F67BC097889F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WrenchWizard/ios/Navigation/NavigationViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "addSubscribers()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B4AB42E5-4B9F-4C78-98F2-CD4C651CD44A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WrenchWizard/ios/Navigation/NavigationViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "addSubscribers()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B4AB42E5-4B9F-4C78-98F2-CD4C651CD44A - 776c87222c23661e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WrenchWizard.NavigationViewModel.addSubscribers() -&gt; ()"
+                  moduleName = "WrenchWizard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paresmakres/Documents/GitHub/WrenchWizard/WrenchWizard/ios/Navigation/NavigationViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  uuid = "B4AB42E5-4B9F-4C78-98F2-CD4C651CD44A - e33f3a2478f0ab28"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (WrenchWizard.NavigationDirection) -&gt; () in WrenchWizard.NavigationViewModel.addSubscribers() -&gt; ()"
+                  moduleName = "WrenchWizard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paresmakres/Documents/GitHub/WrenchWizard/WrenchWizard/ios/Navigation/NavigationViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F2450FE3-1FFA-42E6-9835-237D1B1BFF60"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WrenchWizard/ios/Navigation/NavigationRouter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "handleNavigationCommand(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4E897371-EEDE-43F9-A373-BC98E009A038"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WrenchWizard/ios/Navigation/NavigationRouter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "handleNavigationCommand(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E1DE48B3-BEC3-4BFD-B257-74E46A8E1503"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WrenchWizard/ios/Navigation/NavigationRouter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "handleNavigationCommand(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E58A52F0-810C-4125-ACAF-02CEC4ECEC1A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WrenchWizard/ios/Navigation/Coordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "E58A52F0-810C-4125-ACAF-02CEC4ECEC1A - c7d06782431dbcbd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WrenchWizard.HostView.body.getter : some"
+                  moduleName = "WrenchWizard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paresmakres/Documents/GitHub/WrenchWizard/WrenchWizard/ios/Navigation/Coordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "E58A52F0-810C-4125-ACAF-02CEC4ECEC1A - 55b0c34a49f9365c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (WrenchWizard.Screen, Swift.Int) -&gt; SwiftUI._ConditionalContent&lt;SwiftUI._ConditionalContent&lt;WrenchWizard.HomeScreen, WrenchWizard.SubCategoriesPicker&gt;, WrenchWizard.SubCategoryScreen&gt; in WrenchWizard.HostView.body.getter : some"
+                  moduleName = "WrenchWizard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paresmakres/Documents/GitHub/WrenchWizard/WrenchWizard/ios/Navigation/Coordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "216">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

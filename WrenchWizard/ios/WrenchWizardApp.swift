@@ -10,22 +10,13 @@ import SwiftUI
 @main
 struct WrenchWizardApp: App {
     
-//    private let coordinator = Coordinator()
-//    private let navigator = Navigator()
-//    private var router : NavigationRouter
-    
-    
-    
     init() {
-//        router = NavigationRouter(coordinator: coordinator, featureRoutes: NavigationRouter.routes)
-//        viewModel = BaseViewModel(navigator: navigator, router: router)
-//        configureNavigationBar()
+        configureNavigationBar()
     }
     
     var body: some Scene {
         WindowGroup {
             HostView(coordinator: NavigationViewModel.shared.router.coordinator)
-//                .environmentObject(navigator)
         }
     }
     

@@ -16,8 +16,13 @@ class Navigator: ObservableObject {
         directionSubject.send(NavigationDirection(command: command))
     }
     
-    func goToBack(){
+    func goBack(){
         sendCommand(.goBack)
+        
+    }
+    
+    func goToRoot(){
+        sendCommand(.goToRoot)
     }
 }
 

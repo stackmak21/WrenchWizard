@@ -11,16 +11,10 @@ struct HomeScreen: View {
     
     @StateObject private var homeViewModel: HomeViewModel
     @StateObject private var exploreViewModel : ExploreViewModel
-    @StateObject private var mechanicViewModel: MechanicViewModel
-    @StateObject private var searchViewModel: SearchViewModel
-    @StateObject private var accountViewModel: AccountViewModel
     
     init() {
         _homeViewModel = StateObject(wrappedValue: HomeViewModel())
         _exploreViewModel = StateObject(wrappedValue: ExploreViewModel())
-        _mechanicViewModel = StateObject(wrappedValue: MechanicViewModel())
-        _searchViewModel = StateObject(wrappedValue: SearchViewModel())
-        _accountViewModel = StateObject(wrappedValue: AccountViewModel())
     }
     
     var body: some View {
@@ -31,11 +25,11 @@ struct HomeScreen: View {
                     case .home:
                         ExploreScreen(viewModel: exploreViewModel)
                     case .search:
-                        SearchScreen(viewModel: searchViewModel)
+                        ExploreScreen(viewModel: exploreViewModel)
                     case .account:
-                        AccountScreen(viewModel: accountViewModel)
+                        ExploreScreen(viewModel: exploreViewModel)
                     case .mechanic:
-                        MechanicScreen(viewModel: mechanicViewModel)
+                        ExploreScreen(viewModel: exploreViewModel)
                     }
                    
                 }
@@ -90,6 +84,7 @@ struct HomeScreen: View {
                 .padding(.bottom, container.safeAreaInsets.bottom)
                 .background(Color.ContentBackground.contentBackgroundSecondary.shadow(length: .short))
             }
+            .navigationBarHidden(true)
             .edgesIgnoringSafeArea([.leading, .trailing, .bottom])
         }
     }

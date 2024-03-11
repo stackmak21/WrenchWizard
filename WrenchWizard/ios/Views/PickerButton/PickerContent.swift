@@ -20,7 +20,11 @@ struct PickerContent<I, ItemContent>: View where I: Hashable, ItemContent: View 
         VStack(spacing: 0) {
             ZStack(alignment: .leading) {
                 if #available(iOS 15, *) {
-                    EmptyView()
+//                    EmptyView()
+                    Button(action: onBackClicked, label: {
+                        ToolbarImage(systemName: "chevron.backward")
+                            .padding(.all, 16)
+                    })
                 } else {
                     Button(action: onBackClicked, label: {
                         ToolbarImage(systemName: "chevron.backward")
@@ -36,17 +40,6 @@ struct PickerContent<I, ItemContent>: View where I: Hashable, ItemContent: View 
             .frame(height: 53)
             .background(Color.ContentBackground.contentBackgroundPrimary)
             
-//            if isSearchAllowed {
-//                Spacer().frame(height: 16)
-//                
-//                LabeledTextField(
-//                    styleAttributes: smallTextFieldStyle,
-//                    placeHolder: Strings.search,
-//                    text: $searchTerm
-//                )
-//                .padding(.horizontal, 16)
-//            }
-            
             ScrollView {
                 LazyVStack(spacing: 0) {
                     ForEach(items, id: \.self) { item in
@@ -57,17 +50,6 @@ struct PickerContent<I, ItemContent>: View where I: Hashable, ItemContent: View 
             }
         }
         .background(Color.ContentBackground.contentBackgroundSecondary)
-        .ignoresSafeArea()
         .navigationBarHidden(true)
     }
-    
-    var smallTextFieldStyle: TextFieldStyleAttributes {
-        var style = TextFieldStyleAttributes.outlined
-        style.textFieldHeight = smallTextFieldHeight
-        return style
-    }
 }
-
-//#Preview {
-//    PickerContent()
-//}

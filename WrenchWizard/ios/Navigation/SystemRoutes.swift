@@ -9,7 +9,8 @@ import Foundation
 import SwiftUI
 
 var systemRoutes: [NavigationRoute] = [
-    BackRoute()
+    BackRoute(),
+    GoToRootRoute()
 ]
 
 private struct BackRoute: NavigationRoute {
@@ -24,6 +25,21 @@ private struct BackRoute: NavigationRoute {
         coordinator.stack.goBack()
     }
 }
+
+private struct GoToRootRoute: NavigationRoute {
+    func canRoute(navigationCommand: NavigationCommand) -> Bool {
+        if case .goToRoot = navigationCommand {
+            return true
+        }
+        return false
+    }
+
+    func navigate(coordinator: Coordinator, navigationCommand: NavigationCommand) {
+        coordinator.stack.goBackToRoot()
+    }
+}
+
+
 
 
 

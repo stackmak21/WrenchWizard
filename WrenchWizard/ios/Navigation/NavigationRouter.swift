@@ -14,7 +14,8 @@ struct NavigationRouter {
     static var routes: [NavigationRoute] {
         return [
             systemRoutes,
-            [SubCategoriesRoute()]
+            exploreRoutes,
+            [HomeRoute()]
         ].flatMap({ $0 })
     }
     

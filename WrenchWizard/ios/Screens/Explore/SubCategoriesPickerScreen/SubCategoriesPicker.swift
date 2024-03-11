@@ -23,7 +23,7 @@ struct SubCategoriesPicker: View {
                     items: vm.subCategories) { subCategory in
                         DefinitionPickerItem(vm: vm, subCategory: subCategory)
                     } onBackClicked: {
-                        vm.navigator.goToBack()
+                        vm.navigator.goBack()
                     }
         }
             .onAppear(){
@@ -35,8 +35,8 @@ struct SubCategoriesPicker: View {
 }
 
 #Preview {
-    SubCategoriesPicker(category: Category(id: 1, title: "renovations"), vm: SubCategoriesViewModel())
-        .padding(.top)
+    SubCategoriesPicker(category: Category(id: 2, title: "renovations"), vm: SubCategoriesViewModel())
+        
         
         
 }
