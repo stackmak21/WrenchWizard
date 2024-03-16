@@ -35,7 +35,7 @@ struct ExpandFilterButton: View {
             .animation(.none, value: isExpanded)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
         })
-        .buttonStyle(ExpandFilterButtonStyle(isEnabled: true))
+        .buttonStyle(ExpandFilterButtonStyle(isEnabled: false))
         .frame(idealWidth: 48, idealHeight: 48)
     }
 }

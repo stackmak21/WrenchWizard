@@ -81,6 +81,12 @@
 		F960AB422B840E3900944F6C /* MechanicListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F960AB412B840E3900944F6C /* MechanicListItem.swift */; };
 		F9828D152B9E3AF8000DBB69 /* HomeRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9828D142B9E3AF8000DBB69 /* HomeRoute.swift */; };
 		F9828D172B9F6C4E000DBB69 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9828D162B9F6C4E000DBB69 /* Routes.swift */; };
+		F9828D192BA39A5D000DBB69 /* SelectionButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9828D182BA39A5D000DBB69 /* SelectionButtonStyle.swift */; };
+		F9828D1B2BA49DDB000DBB69 /* Selection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9828D1A2BA49DDB000DBB69 /* Selection.swift */; };
+		F9828D1E2BA4BE52000DBB69 /* JobConfigurationSelections.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9828D1D2BA4BE52000DBB69 /* JobConfigurationSelections.swift */; };
+		F9828D202BA4C6E4000DBB69 /* SelectionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9828D1F2BA4C6E4000DBB69 /* SelectionList.swift */; };
+		F9828D222BA5AEFF000DBB69 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9828D212BA5AEFF000DBB69 /* SwiftUIView.swift */; };
+		F9828D242BA5DCF0000DBB69 /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9828D232BA5DCF0000DBB69 /* PrimaryButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -161,6 +167,12 @@
 		F960AB412B840E3900944F6C /* MechanicListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MechanicListItem.swift; sourceTree = "<group>"; };
 		F9828D142B9E3AF8000DBB69 /* HomeRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRoute.swift; sourceTree = "<group>"; };
 		F9828D162B9F6C4E000DBB69 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
+		F9828D182BA39A5D000DBB69 /* SelectionButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionButtonStyle.swift; sourceTree = "<group>"; };
+		F9828D1A2BA49DDB000DBB69 /* Selection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selection.swift; sourceTree = "<group>"; };
+		F9828D1D2BA4BE52000DBB69 /* JobConfigurationSelections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobConfigurationSelections.swift; sourceTree = "<group>"; };
+		F9828D1F2BA4C6E4000DBB69 /* SelectionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionList.swift; sourceTree = "<group>"; };
+		F9828D212BA5AEFF000DBB69 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		F9828D232BA5DCF0000DBB69 /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,7 +238,6 @@
 				F93ED56D2B9D9ACB00A204D3 /* SubCategoryRoute.swift */,
 				F93ED5712B9D9C1800A204D3 /* SubCategoryViewModel.swift */,
 				F93ED5732B9D9CEB00A204D3 /* SubCategoryScreen.swift */,
-				F9828D142B9E3AF8000DBB69 /* HomeRoute.swift */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -323,7 +334,9 @@
 			isa = PBXGroup;
 			children = (
 				F960AAEE2B778ECF00944F6C /* HomeScreen.swift */,
+				F9828D142B9E3AF8000DBB69 /* HomeRoute.swift */,
 				F93ED56C2B9D993500A204D3 /* Explore */,
+				F9828D212BA5AEFF000DBB69 /* SwiftUIView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -403,6 +416,8 @@
 				F931B05C2B8BEF8A0095BD92 /* ListingItemStyle.swift */,
 				F931B05E2B8C056B0095BD92 /* FocusNative.swift */,
 				F931B0622B8CDCEC0095BD92 /* ClearActionButtonStyle.swift */,
+				F9828D182BA39A5D000DBB69 /* SelectionButtonStyle.swift */,
+				F9828D232BA5DCF0000DBB69 /* PrimaryButtonStyle.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -410,6 +425,7 @@
 		F960AB352B824B7000944F6C /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				F9828D1C2BA4BE20000DBB69 /* Services */,
 				F960AB372B824B8400944F6C /* Models */,
 				F960AB362B824B7B00944F6C /* Utilities */,
 			);
@@ -430,8 +446,18 @@
 				F960AB3F2B824EB400944F6C /* Mechanic.swift */,
 				F931B0562B8A4F420095BD92 /* Category.swift */,
 				F931B0702B92A4F50095BD92 /* SubCategory.swift */,
+				F9828D1A2BA49DDB000DBB69 /* Selection.swift */,
+				F9828D1F2BA4C6E4000DBB69 /* SelectionList.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		F9828D1C2BA4BE20000DBB69 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F9828D1D2BA4BE52000DBB69 /* JobConfigurationSelections.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -583,6 +609,7 @@
 				F960AAC32B75533200944F6C /* Typography.swift in Sources */,
 				F931B05F2B8C056B0095BD92 /* FocusNative.swift in Sources */,
 				F960AAF52B77C17E00944F6C /* HomeViewModel.swift in Sources */,
+				F9828D1E2BA4BE52000DBB69 /* JobConfigurationSelections.swift in Sources */,
 				F960AAC12B75532800944F6C /* Colors.swift in Sources */,
 				F931B0632B8CDCEC0095BD92 /* ClearActionButtonStyle.swift in Sources */,
 				F960AAFF2B78BB9200944F6C /* ExploreViewModel.swift in Sources */,
@@ -594,6 +621,7 @@
 				F931B0572B8A4F420095BD92 /* Category.swift in Sources */,
 				F960AB212B7BE52800944F6C /* ExploreFilterBar.swift in Sources */,
 				F931B0592B8BEC1C0095BD92 /* ButtonStyle.swift in Sources */,
+				F9828D1B2BA49DDB000DBB69 /* Selection.swift in Sources */,
 				F93ED5612B9B77D200A204D3 /* DefinitionPickerItem.swift in Sources */,
 				F960AB2E2B7E5F8700944F6C /* ToolbarItems.swift in Sources */,
 				F931B0842B9356820095BD92 /* SubCategoriesRoute.swift in Sources */,
@@ -614,6 +642,7 @@
 				F931B0972B968CAC0095BD92 /* SystemRoutes.swift in Sources */,
 				F931B0712B92A4F60095BD92 /* SubCategory.swift in Sources */,
 				F931B08E2B93ECAE0095BD92 /* Coordinator.swift in Sources */,
+				F9828D202BA4C6E4000DBB69 /* SelectionList.swift in Sources */,
 				F931B0692B8D3ECE0095BD92 /* DefinitionPickerContent.swift in Sources */,
 				F960AA8E2B75413800944F6C /* WrenchWizardApp.swift in Sources */,
 				F93ED5722B9D9C1800A204D3 /* SubCategoryViewModel.swift in Sources */,
@@ -623,8 +652,11 @@
 				F931B05D2B8BEF8A0095BD92 /* ListingItemStyle.swift in Sources */,
 				F960AAF12B7793E000944F6C /* Shadow.swift in Sources */,
 				F960AAC62B7555A200944F6C /* FontExtensions.swift in Sources */,
+				F9828D192BA39A5D000DBB69 /* SelectionButtonStyle.swift in Sources */,
 				F960AB322B7E7C9D00944F6C /* LabeledTextField.swift in Sources */,
 				F931B0952B94FDF20095BD92 /* NavigationViewModel.swift in Sources */,
+				F9828D222BA5AEFF000DBB69 /* SwiftUIView.swift in Sources */,
+				F9828D242BA5DCF0000DBB69 /* PrimaryButtonStyle.swift in Sources */,
 				F93ED5652B9CB1BD00A204D3 /* ExploreScreen.swift in Sources */,
 				F9828D152B9E3AF8000DBB69 /* HomeRoute.swift in Sources */,
 				F93ED56E2B9D9ACB00A204D3 /* SubCategoryRoute.swift in Sources */,

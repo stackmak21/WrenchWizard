@@ -23,6 +23,14 @@ struct ButtonStyleAttributes {
         )
     }
     
+    static var selection: ButtonStyleAttributes {
+        ButtonStyleAttributes(
+            isBorderVisible: true,
+            colors: selectionButtonColors,
+            cornerRadius: .infinity
+        )
+    }
+    
     
     static func custom(
         isBorderVisible: Bool,
@@ -81,6 +89,20 @@ var primaryButtonColors: ButtonColorSet {
         pressedBackground:  Color.Button.primaryPressedBackground,
         pressedForeground: Color.Button.primaryPressedForeground,
         pressedBorder: Color.clear,
+        disabledBackground: Color.Button.primaryDisabledBackground,
+        disabledForeground: Color.Button.primaryDisabledForeground,
+        disabledBorder: Color.clear
+    )
+}
+
+var selectionButtonColors: ButtonColorSet {
+    ButtonColorSet(
+        normalBackground: Color.clear,
+        normalForeground: Color.black,
+        normalBorder: Color.blue,
+        pressedBackground:  Color.clear,
+        pressedForeground: Color.black.opacity(0.6),
+        pressedBorder: Color.blue.opacity(0.6),
         disabledBackground: Color.Button.primaryDisabledBackground,
         disabledForeground: Color.Button.primaryDisabledForeground,
         disabledBorder: Color.clear

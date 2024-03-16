@@ -23,7 +23,6 @@ struct ExpandFilterButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .background(style.colors.backgroundColor(isEnabled: isEnabled, isPressed: configuration.isPressed))
-            
             .cornerRadius(8)
     }
 }

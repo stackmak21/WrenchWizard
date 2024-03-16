@@ -14,7 +14,7 @@ struct DefinitionPickerItem<T>: View where T: BaseViewModel {
     
     var body: some View {
         Button(action: {
-            vm.navigator.sendCommand(.subCategory)
+            vm.navigator.sendCommand(.subCategory(subCategory: subCategory))
         }, label: {
             HStack(spacing: 0) {
                 //                    if !(definition is PaymentMethod) {

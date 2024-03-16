@@ -19,7 +19,7 @@ enum Screen: Equatable {
     
     case home
     case subCategories(category: Category)
-    case subCategory
+    case subCategory(subCategory: SubCategory)
 }
 
 
@@ -42,8 +42,8 @@ struct HostView: View {
                 HomeScreen()
             case .subCategories(let category):
                 SubCategoriesPicker(category: category)
-            case .subCategory:
-                SubCategoryScreen()
+            case .subCategory(let subCategory):
+                SubCategoryScreen(subCategory: subCategory)
             }
         
         }
