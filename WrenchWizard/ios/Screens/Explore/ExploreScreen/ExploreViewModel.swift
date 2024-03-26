@@ -25,7 +25,7 @@ class ExploreViewModel: BaseViewModel{
     
     func fetchMechanics(){
         Task{
-            guard let fetchedMechanics: [Mechanic] = await NetworkingManager.shared.downloadData(fromURL: "http://localhost:8080/getmechanics") else { return }
+            guard let fetchedMechanics: [Mechanic] = await NetworkingManager.shared.downloadData(fromURL: "\(BASE_URL)/getmechanics") else { return }
             mechanics = fetchedMechanics
         }
     }
@@ -33,14 +33,14 @@ class ExploreViewModel: BaseViewModel{
     func fetchCategories(){
         Task{
             
-            guard let fetchedCategories: [Category] = await NetworkingManager.shared.downloadData(fromURL: "http://localhost:8080/getcategories") else { return }
+            guard let fetchedCategories: [Category] = await NetworkingManager.shared.downloadData(fromURL: "\(BASE_URL)/getcategories") else { return }
             categories = fetchedCategories
         }
     }
     
     func fetchSubCategories(id: Int){
         Task{
-            guard let fetchedSubCategories: [SubCategory] = await NetworkingManager.shared.downloadData(fromURL: "http://localhost:8080/getsubcategories/\(id)") else { return }
+            guard let fetchedSubCategories: [SubCategory] = await NetworkingManager.shared.downloadData(fromURL: "\(BASE_URL)/getsubcategories/\(id)") else { return }
             subCategories = fetchedSubCategories
         }
     }

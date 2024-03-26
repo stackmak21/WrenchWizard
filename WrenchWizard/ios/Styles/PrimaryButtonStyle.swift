@@ -13,8 +13,8 @@ struct PrimaryButtonStyle: ButtonStyle {
     let isEnabled: Bool
     let style: ButtonStyleAttributes
     
-    init() {
-        self.isEnabled = true
+    init(isEnabled: Bool) {
+        self.isEnabled = isEnabled
         style = .primary
     }
     

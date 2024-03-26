@@ -16,7 +16,7 @@ class SubCategoriesViewModel: BaseViewModel {
     func fetchSubCategories(id: Int){
         isLoading = true
         Task{
-            guard let fetchedSubCategories: [SubCategory] = await networkingManager.downloadData(fromURL: "http://localhost:8080/getsubcategories/\(id)") else { return }
+            guard let fetchedSubCategories: [SubCategory] = await networkingManager.downloadData(fromURL: "\(BASE_URL)/getsubcategories/\(id)") else { return }
             isLoading = false
             subCategories = fetchedSubCategories
         }

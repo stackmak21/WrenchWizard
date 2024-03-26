@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var showDetails = 0
+    @State private var showDetails = false
 
     var body: some View {
         GeometryReader{ container in
@@ -9,11 +9,11 @@ struct ContentView: View {
                 VStack {
                     Button("Press to show details") {
                         withAnimation {
-                            showDetails = 1
+                            showDetails.toggle()
                         }
                     }
                     
-                    if showDetails == 1 {
+                    if showDetails {
                         // Moves in from the bottom
                         Text("Details go here.")
                             .transition(.move(edge: .bottom))

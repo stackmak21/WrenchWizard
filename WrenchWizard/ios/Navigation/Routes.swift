@@ -11,6 +11,6 @@ import Foundation
 var exploreRoutes: [NavigationRoute] {
     return [
         SubCategoriesRoute(),
-        SubCategoryRoute()
+        JobConfigurationRoute()
     ]
 }

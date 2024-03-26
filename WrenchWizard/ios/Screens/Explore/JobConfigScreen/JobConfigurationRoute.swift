@@ -7,7 +7,7 @@
 
 import Foundation
 
-class SubCategoryRoute: NavigationRoute {
+class JobConfigurationRoute: NavigationRoute {
 
     func canRoute(navigationCommand: NavigationCommand) -> Bool {
         if case .subCategory(_) = navigationCommand{

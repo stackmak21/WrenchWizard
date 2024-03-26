@@ -116,9 +116,9 @@ private struct TabItem: View {
     
     private var color: Color {
         if isSelected {
-            return Color.primaryColor
+            return Color.primary
         } else {
-            return Color.primaryColor.opacity(0.5)
+            return Color.primary
         }
     }
 }

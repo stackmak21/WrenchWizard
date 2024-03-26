@@ -12,7 +12,7 @@ import SwiftUI
 extension Color{
     
    
-    static let primaryColor = Asset.Theme.Pallete.primaryColor.color.toSwiftUi()
+    
     
     struct ContentBackground{
             static let contentBackgroundPrimary = Asset.Theme.ContentBackground.contentBackgroundPrimary.color.toSwiftUi()

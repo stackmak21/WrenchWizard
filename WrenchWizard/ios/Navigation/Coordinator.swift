@@ -12,11 +12,6 @@ import FlowStacks
 typealias NavigationStack = Routes<Screen>
 
 enum Screen: Equatable {
-    static func == (lhs: Screen, rhs: Screen) -> Bool {
-        return true
-    }
-    
-    
     case home
     case subCategories(category: Category)
     case subCategory(subCategory: SubCategory)
@@ -43,7 +38,7 @@ struct HostView: View {
             case .subCategories(let category):
                 SubCategoriesPicker(category: category)
             case .subCategory(let subCategory):
-                SubCategoryScreen(subCategory: subCategory)
+                JobConfigurationScreen(subCategory: subCategory)
             }
         
         }
