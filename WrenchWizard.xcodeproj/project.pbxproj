@@ -16,7 +16,7 @@
 		F931B05D2B8BEF8A0095BD92 /* ListingItemStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F931B05C2B8BEF8A0095BD92 /* ListingItemStyle.swift */; };
 		F931B05F2B8C056B0095BD92 /* FocusNative.swift in Sources */ = {isa = PBXBuildFile; fileRef = F931B05E2B8C056B0095BD92 /* FocusNative.swift */; };
 		F931B0632B8CDCEC0095BD92 /* ClearActionButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F931B0622B8CDCEC0095BD92 /* ClearActionButtonStyle.swift */; };
-		F931B0652B8D12810095BD92 /* SubCategoriesPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F931B0642B8D12810095BD92 /* SubCategoriesPicker.swift */; };
+		F931B0652B8D12810095BD92 /* SubCategoriesListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F931B0642B8D12810095BD92 /* SubCategoriesListScreen.swift */; };
 		F931B0692B8D3ECE0095BD92 /* DefinitionPickerContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F931B0682B8D3ECE0095BD92 /* DefinitionPickerContent.swift */; };
 		F931B0712B92A4F60095BD92 /* SubCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F931B0702B92A4F50095BD92 /* SubCategory.swift */; };
 		F931B07B2B932AD50095BD92 /* FlowStacks in Frameworks */ = {isa = PBXBuildFile; productRef = F931B07A2B932AD50095BD92 /* FlowStacks */; };
@@ -88,6 +88,12 @@
 		F9828D242BA5DCF0000DBB69 /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9828D232BA5DCF0000DBB69 /* PrimaryButtonStyle.swift */; };
 		F9828D262BA5FDA2000DBB69 /* RoundedCornerModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9828D252BA5FDA2000DBB69 /* RoundedCornerModifier.swift */; };
 		F9828D2B2BA6E8E9000DBB69 /* AccessCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9828D2A2BA6E8E9000DBB69 /* AccessCameraView.swift */; };
+		F99D300D2BCAA5B20013442D /* NavigationControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99D300C2BCAA5B20013442D /* NavigationControllerExtensions.swift */; };
+		F99D30102BCE4A450013442D /* SelectProfessionalScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99D300F2BCE4A450013442D /* SelectProfessionalScreen.swift */; };
+		F99D30122BCE4AA90013442D /* SelectProfessionalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99D30112BCE4AA90013442D /* SelectProfessionalViewModel.swift */; };
+		F99D30142BCE4CA80013442D /* SelectProfessionalRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99D30132BCE4CA80013442D /* SelectProfessionalRoute.swift */; };
+		F99D30162BCE5DA60013442D /* SelectProfessionalDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99D30152BCE5DA60013442D /* SelectProfessionalDataService.swift */; };
+		F99D301A2BCF1B8F0013442D /* ProfessionalListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99D30192BCF1B8F0013442D /* ProfessionalListItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,7 +108,7 @@
 		F931B05C2B8BEF8A0095BD92 /* ListingItemStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingItemStyle.swift; sourceTree = "<group>"; };
 		F931B05E2B8C056B0095BD92 /* FocusNative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusNative.swift; sourceTree = "<group>"; };
 		F931B0622B8CDCEC0095BD92 /* ClearActionButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearActionButtonStyle.swift; sourceTree = "<group>"; };
-		F931B0642B8D12810095BD92 /* SubCategoriesPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoriesPicker.swift; sourceTree = "<group>"; };
+		F931B0642B8D12810095BD92 /* SubCategoriesListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoriesListScreen.swift; sourceTree = "<group>"; };
 		F931B0682B8D3ECE0095BD92 /* DefinitionPickerContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionPickerContent.swift; sourceTree = "<group>"; };
 		F931B0702B92A4F50095BD92 /* SubCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategory.swift; sourceTree = "<group>"; };
 		F931B0832B9356820095BD92 /* SubCategoriesRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoriesRoute.swift; sourceTree = "<group>"; };
@@ -175,6 +181,12 @@
 		F9828D232BA5DCF0000DBB69 /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
 		F9828D252BA5FDA2000DBB69 /* RoundedCornerModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerModifier.swift; sourceTree = "<group>"; };
 		F9828D2A2BA6E8E9000DBB69 /* AccessCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessCameraView.swift; sourceTree = "<group>"; };
+		F99D300C2BCAA5B20013442D /* NavigationControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerExtensions.swift; sourceTree = "<group>"; };
+		F99D300F2BCE4A450013442D /* SelectProfessionalScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectProfessionalScreen.swift; sourceTree = "<group>"; };
+		F99D30112BCE4AA90013442D /* SelectProfessionalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectProfessionalViewModel.swift; sourceTree = "<group>"; };
+		F99D30132BCE4CA80013442D /* SelectProfessionalRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectProfessionalRoute.swift; sourceTree = "<group>"; };
+		F99D30152BCE5DA60013442D /* SelectProfessionalDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectProfessionalDataService.swift; sourceTree = "<group>"; };
+		F99D30192BCF1B8F0013442D /* ProfessionalListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalListItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +230,7 @@
 				F931B0962B968CAC0095BD92 /* SystemRoutes.swift */,
 				F931B0982B968ED00095BD92 /* NavigationDirection.swift */,
 				F9828D162B9F6C4E000DBB69 /* Routes.swift */,
+				F99D300C2BCAA5B20013442D /* NavigationControllerExtensions.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -226,7 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				F931B0832B9356820095BD92 /* SubCategoriesRoute.swift */,
-				F931B0642B8D12810095BD92 /* SubCategoriesPicker.swift */,
+				F931B0642B8D12810095BD92 /* SubCategoriesListScreen.swift */,
 				F93ED5672B9CBD1400A204D3 /* SubCategoriesViewModel.swift */,
 			);
 			path = SubCategoriesPickerScreen;
@@ -235,6 +248,7 @@
 		F93ED56C2B9D993500A204D3 /* Explore */ = {
 			isa = PBXGroup;
 			children = (
+				F99D300E2BCE4A2C0013442D /* SelectProffesional */,
 				F9828D2E2BAF4E89000DBB69 /* JobConfigScreen */,
 				F9828D2C2BAF4D44000DBB69 /* ExploreScreen */,
 				F93ED5662B9CBBB100A204D3 /* SubCategoriesPickerScreen */,
@@ -371,6 +385,7 @@
 				F931B0542B89E4430095BD92 /* ListingItem.swift */,
 				F931B0682B8D3ECE0095BD92 /* DefinitionPickerContent.swift */,
 				F93ED5602B9B77D200A204D3 /* DefinitionPickerItem.swift */,
+				F99D30192BCF1B8F0013442D /* ProfessionalListItem.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -454,6 +469,7 @@
 			isa = PBXGroup;
 			children = (
 				F9828D1D2BA4BE52000DBB69 /* JobConfigurationSelections.swift */,
+				F99D30152BCE5DA60013442D /* SelectProfessionalDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -493,6 +509,16 @@
 				F93ED5732B9D9CEB00A204D3 /* JobConfigurationScreen.swift */,
 			);
 			path = JobConfigScreen;
+			sourceTree = "<group>";
+		};
+		F99D300E2BCE4A2C0013442D /* SelectProffesional */ = {
+			isa = PBXGroup;
+			children = (
+				F99D300F2BCE4A450013442D /* SelectProfessionalScreen.swift */,
+				F99D30112BCE4AA90013442D /* SelectProfessionalViewModel.swift */,
+				F99D30132BCE4CA80013442D /* SelectProfessionalRoute.swift */,
+			);
+			path = SelectProffesional;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -640,22 +666,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F931B0652B8D12810095BD92 /* SubCategoriesPicker.swift in Sources */,
+				F931B0652B8D12810095BD92 /* SubCategoriesListScreen.swift in Sources */,
 				F960AAC32B75533200944F6C /* Typography.swift in Sources */,
 				F931B05F2B8C056B0095BD92 /* FocusNative.swift in Sources */,
 				F960AAF52B77C17E00944F6C /* HomeViewModel.swift in Sources */,
 				F9828D1E2BA4BE52000DBB69 /* JobConfigurationSelections.swift in Sources */,
 				F960AAC12B75532800944F6C /* Colors.swift in Sources */,
 				F931B0632B8CDCEC0095BD92 /* ClearActionButtonStyle.swift in Sources */,
+				F99D30162BCE5DA60013442D /* SelectProfessionalDataService.swift in Sources */,
 				F960AAFF2B78BB9200944F6C /* ExploreViewModel.swift in Sources */,
 				F960AB2C2B7E5F2500944F6C /* PickerContent.swift in Sources */,
+				F99D30102BCE4A450013442D /* SelectProfessionalScreen.swift in Sources */,
 				F960AB1D2B78F0FE00944F6C /* TextFieldStyle.swift in Sources */,
 				F931B0532B8958800095BD92 /* CategoriesButtonStyle.swift in Sources */,
 				F931B0992B968ED00095BD92 /* NavigationDirection.swift in Sources */,
+				F99D30122BCE4AA90013442D /* SelectProfessionalViewModel.swift in Sources */,
+				F99D300D2BCAA5B20013442D /* NavigationControllerExtensions.swift in Sources */,
 				F960AB102B78DC5900944F6C /* Assets.swift in Sources */,
 				F931B0572B8A4F420095BD92 /* Category.swift in Sources */,
+				F99D30142BCE4CA80013442D /* SelectProfessionalRoute.swift in Sources */,
 				F960AB212B7BE52800944F6C /* ExploreFilterBar.swift in Sources */,
 				F931B0592B8BEC1C0095BD92 /* ButtonStyle.swift in Sources */,
+				F99D301A2BCF1B8F0013442D /* ProfessionalListItem.swift in Sources */,
 				F9828D1B2BA49DDB000DBB69 /* Selection.swift in Sources */,
 				F93ED5612B9B77D200A204D3 /* DefinitionPickerItem.swift in Sources */,
 				F960AB2E2B7E5F8700944F6C /* ToolbarItems.swift in Sources */,

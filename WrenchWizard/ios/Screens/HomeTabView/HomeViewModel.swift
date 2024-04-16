@@ -15,9 +15,10 @@ class HomeViewModel: ObservableObject {
 
 
 enum ActiveScreen: String {
-    case home = "home"
-    case search = "search"
-    case account = "account"
-    case mechanic = "listings"
+    case home
+    case myJobs
+    case post
+    case messages
+    case account
     
 }

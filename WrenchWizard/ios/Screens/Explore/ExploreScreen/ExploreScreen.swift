@@ -8,102 +8,122 @@
 import SwiftUI
 
 struct ExploreScreen: View {
-    @ObservedObject var viewModel: ExploreViewModel
+    
+    @StateObject var viewModel: ExploreViewModel = ExploreViewModel()
     
     var body: some View {
-        
         ExploreContent(vm: viewModel)
-        
-        
     }
 }
 
-private struct ExploreContent: View {
-    @ObservedObject var vm: ExploreViewModel
+struct ExploreContent: View {
     
+    @ObservedObject var vm: ExploreViewModel
     
     var body: some View{
         GeometryReader{ container in
-            VStack(alignment: .leading, spacing: 0){
-                ExploreFilterBar(vm: vm)
-                    .padding(.top, container.safeAreaInsets.top)
-                    .padding(.leading, container.safeAreaInsets.leading)
-                    .padding(.trailing, container.safeAreaInsets.trailing)
-                    .background(Color.ContentBackground.contentBackgroundSecondary.shadow(length: .long))
-                    .frame(alignment: .top)
-                    .zIndex(1)
-   
-                ScrollView(showsIndicators: false){
-                    Text("All Services")
-                        .font(Typography.semiBold(size: 24))
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding([.leading, .trailing, .top])
-                    
+            
+            ScrollView(showsIndicators: false){
+                VStack(spacing: 0){
+                    locationSection(container)
+                    searchSection(container)
                     categoriesGrid(selectionSize: buttonSize(proxy: container))
                         .padding(.bottom)
-                    
-                    Text("Recommended Mechanics")
-                        .font(Typography.semiBold(size: 24))
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding(.horizontal)
-                    
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        LazyHStack{
-                            ForEach(vm.mechanics, id: \.self.id){ mechanic in
-                                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                                    ListingItem(mechanic: mechanic)
-                                })
-                                .buttonStyle(ListingItemButtonStyle())
-                                .padding(.horizontal)
-                            }
-                            
-                        }
-                    }
                 }
             }
-            .background(Color.ContentBackground.contentBackgroundSecondary)
-            .ignoresSafeArea()
+            
+            .background(Color.ContentBackground.contentBackgroundSecondary).ignoresSafeArea()
             .onAppear(){
                 vm.fetchCategories()
-                vm.fetchMechanics()
             }
-            
         }
     }
     
     @ViewBuilder func categoriesGrid(selectionSize size: CGFloat) -> some View {
         LazyVGrid(
-            columns: [GridItem(.fixed(size), spacing: 10), GridItem(.fixed(size), spacing: 10), GridItem(.fixed(size), spacing: 10)]
+            columns: [GridItem(.fixed(size), spacing: 10), GridItem(.fixed(size), spacing: 10)]
         ) {
             ForEach(vm.categories, id: \.self) { category in
                 Button(action: {
                     vm.navigator.sendCommand(.subCategories(category: category))
                 }, label: {
-                    VStack(spacing: 0) {
-                        Spacer().frame(height: 16)
+                    ZStack{
                         image(id: category.id)
                             .resizable()
-                            .frame(width: 48, height: 48, alignment: .top)
-                            .frame(alignment: .bottom)
-                        
-                        Text(category.title.capitalized)
-                            .lineLimit(2)
-                            .frame(minHeight: 40)
-                            .multilineTextAlignment(.center)
-                        
+                            .frame(width: 80, height: 80)
+                            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
+                        VStack(spacing: 0) {
+                            VStack(alignment: .leading, spacing: 0){
+                                Text(category.title.capitalized)
+                                    .font(Typography.semiBold(size: 16))
+                                    .lineLimit(2)
+                                    .multilineTextAlignment(.leading)
+                                    .frame(height: 44, alignment: .top)
+                                Text("12 Services")
+                                    .font(Typography.regular(size: 14))
+                                    .foregroundColor(Color.emperor)
+                                Spacer().frame(height: 16)
+                                Image(systemName: "arrow.right")
+                                    .font(Typography.semiBold(size: 16))
+                                Spacer()
+                            }
+                            .frame(maxWidth: size , alignment: .leading)
+                            .frame(maxHeight: .infinity, alignment: .top)
+                            .padding(.leading, 8)
+                            .padding(.top, 10)
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
                     }
-                    .frame(width: size, height: size)
+                    .frame(width: size, height: 120)
                 })
                 .buttonStyle(CategoriesButtonStyle())
             }
         }
     }
     
-    private func buttonSize(proxy: GeometryProxy) -> CGFloat {
-        return (proxy.size.width - proxy.safeAreaInsets.leading - proxy.safeAreaInsets.trailing - 160) / 2.0
+    @ViewBuilder func locationSection(_ container: GeometryProxy) -> some View {
+        Label(
+            title: { Text("28 Oktovriou 46, Tripoli").font(Typography.bold(size: 20)) },
+            icon: { Image(systemName: "location.circle.fill").resizable().foregroundColor(.gossamer).frame(width: 30, height: 30) }
+        )
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(.top, 16 + container.safeAreaInsets.top)
+        .padding(.leading)
     }
     
-    private func image(id: Int) -> Image {
+    @ViewBuilder func searchSection(_ container: GeometryProxy) -> some View {
+        VStack(spacing: 0){
+            Group{
+                Text("Hey Paris")
+                    .font(Typography.semiBold(size: 20))
+                    .foregroundColor(.alto)
+                Text("Can I help you something? ")
+                    .font(Typography.regular(size: 16))
+                    .foregroundColor(.alto)
+                    .padding(.bottom, 12)
+                LabeledTextField(
+                    placeholder: "Search",
+                    lineLimit: 1,
+                    text: Binding(get: {vm.searchTerm}, set: {vm.searchTerm = $0}),
+                    style: .outlined,
+                    trailingContent:{ },
+                    leadingContent: {}
+                )
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+        }
+        .padding(16)
+        .frame(maxWidth: .infinity)
+        .background(Color.gossamer)
+        .cornerRadius(14)
+        .padding()
+    }
+    
+    func buttonSize(proxy: GeometryProxy) -> CGFloat {
+        return (proxy.size.width - 50) / 2.0
+    }
+    
+    func image(id: Int) -> Image {
         switch id {
         case 1: Image(uiImage: Asset.Illustrations.offers.image)
         case 2: Image(uiImage: Asset.Illustrations.urgentJobsRepair.image)
@@ -117,8 +137,8 @@ private struct ExploreContent: View {
         default: Image(uiImage: Asset.Illustrations.events.image)
         }
     }
-   
 }
+
 
 #Preview {
     ExploreScreen(viewModel: ExploreViewModel())

@@ -10,6 +10,7 @@ import Foundation
 struct Category: Identifiable, Codable, Hashable {
     let id: Int
     let title: String
+    
 
     enum CodingKeys: String, CodingKey {
         case id = "categoryid"

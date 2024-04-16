@@ -20,7 +20,8 @@ struct PrimaryButtonStyle: ButtonStyle {
     
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .padding()
+            .padding(.vertical, 8)
+            .padding(.horizontal)
             .font(Typography.bold(size: 16))
             .foregroundColor(style.colors.foregroundColor(isEnabled: isEnabled, isPressed: configuration.isPressed))
             .background(style.colors.backgroundColor(isEnabled: isEnabled, isPressed: configuration.isPressed))

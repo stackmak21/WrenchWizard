@@ -9,13 +9,7 @@ import SwiftUI
 
 struct HomeScreen: View {
     
-    @StateObject private var homeViewModel: HomeViewModel
-    @StateObject private var exploreViewModel : ExploreViewModel
-    
-    init() {
-        _homeViewModel = StateObject(wrappedValue: HomeViewModel())
-        _exploreViewModel = StateObject(wrappedValue: ExploreViewModel())
-    }
+    @StateObject private var homeViewModel: HomeViewModel = HomeViewModel()
     
     var body: some View {
         GeometryReader { container in
@@ -23,13 +17,15 @@ struct HomeScreen: View {
                 ZStack {
                     switch homeViewModel.activeScreen {
                     case .home:
-                        ExploreScreen(viewModel: exploreViewModel)
-                    case .search:
-                        ExploreScreen(viewModel: exploreViewModel)
+                        ExploreScreen()
+                    case .myJobs:
+                        EmptyView()
+                    case .post:
+                        EmptyView()
+                    case .messages:
+                        EmptyView()
                     case .account:
-                        ExploreScreen(viewModel: exploreViewModel)
-                    case .mechanic:
-                        ExploreScreen(viewModel: exploreViewModel)
+                        EmptyView()
                     }
                    
                 }
@@ -39,7 +35,7 @@ struct HomeScreen: View {
                 
                 HStack {
                     TabItem(
-                        title: Strings.pap,
+                        title: "Home",
                         image: Image(systemName: "house.fill"),
                         isNotificationVisible: false,
                         isSelected: homeViewModel.activeScreen == .home
@@ -49,23 +45,33 @@ struct HomeScreen: View {
                     }
                     Spacer()
                     TabItem(
-                        title: Strings.mechanic,
-                        image: Image(systemName: "wrench.and.screwdriver"),
+                        title: "My Jobs",
+                        image: Image(systemName: "doc.text.fill"),
                         isNotificationVisible: false,
-                        isSelected: homeViewModel.activeScreen == .mechanic
+                        isSelected: homeViewModel.activeScreen == .myJobs
                     )
                     .onTapGesture {
-                        homeViewModel.activeScreen = .mechanic
+                        homeViewModel.activeScreen = .myJobs
                     }
                     Spacer()
                     TabItem(
-                        title: Strings.search,
-                        image: Image(systemName: "plus.square.fill"),
+                        title: "Post",
+                        image: Image(systemName: "plus.circle.fill"),
                         isNotificationVisible: false,
-                        isSelected: homeViewModel.activeScreen == .search
+                        isSelected: homeViewModel.activeScreen == .post
                     )
                     .onTapGesture {
-                        homeViewModel.activeScreen = .search
+                        homeViewModel.activeScreen = .post
+                    }
+                    Spacer()
+                    TabItem(
+                        title: "Message",
+                        image: Image(systemName: "bolt.horizontal.circle.fill"),
+                        isNotificationVisible: false,
+                        isSelected: homeViewModel.activeScreen == .messages
+                    )
+                    .onTapGesture {
+                        homeViewModel.activeScreen = .messages
                     }
                     Spacer()
                     TabItem(
@@ -103,7 +109,7 @@ private struct TabItem: View {
                 image
                     .renderingMode(.template)
                 Text(title)
-                    .font(Typography.regular(size: 10))
+                    .font(Typography.regular(size: 12))
             }
             .foregroundColor(color)
             if isNotificationVisible {
@@ -116,9 +122,9 @@ private struct TabItem: View {
     
     private var color: Color {
         if isSelected {
-            return Color.primary
+            return Color.gossamer
         } else {
-            return Color.primary
+            return Color.osloGray
         }
     }
 }

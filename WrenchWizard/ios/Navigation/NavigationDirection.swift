@@ -16,6 +16,7 @@ enum NavigationCommand{
     case home
     case subCategories(category: Category)
     case subCategory(subCategory: SubCategory)
+    case selectProfessional(_ subCategory: SubCategory)
     case goBack
     case goToRoot
 }

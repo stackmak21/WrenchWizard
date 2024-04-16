@@ -109,7 +109,10 @@ private struct SubCategoryContent: View {
                     Spacer()
                 }
             }
-            .navigationBarHidden(true)
+            .toolbar{
+                ToolbarBackButton(action: {})
+                ToolbarTitle(title: "Helloo")
+            }
         }
     }
     

@@ -7,7 +7,7 @@
 
 import Foundation
 
-let BASE_URL = "https://633e-109-178-254-91.ngrok-free.app"
+let BASE_URL = "https://5827-2a02-587-c404-1800-9d0e-7410-c809-1e4d.ngrok-free.app"
 
 class JobConfigurationDataService {
     

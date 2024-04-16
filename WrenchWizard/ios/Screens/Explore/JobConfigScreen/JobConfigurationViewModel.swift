@@ -56,10 +56,10 @@ class JobConfigurationViewModel: BaseViewModel {
     
     func fetchJobSelections(id: Int) async {
         do {
-            self.isLoading = true
+            isLoading = true
             let steps = try await jobConfigurationDataService.fetchSteps(id)
-            self.jobConfigurationSteps = steps
-            self.isLoading = false
+            jobConfigurationSteps = steps
+            isLoading = false
             progressBarVolume()
         } catch {
             print("Error fetching titles and selections: \(error)")

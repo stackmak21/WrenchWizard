@@ -15,6 +15,7 @@ enum Screen: Equatable {
     case home
     case subCategories(category: Category)
     case subCategory(subCategory: SubCategory)
+    case selectProfessional(_ subCategory: SubCategory)
 }
 
 
@@ -36,9 +37,11 @@ struct HostView: View {
             case .home:
                 HomeScreen()
             case .subCategories(let category):
-                SubCategoriesPicker(category: category)
+                SubCategoriesListScreen(category: category)
             case .subCategory(let subCategory):
                 JobConfigurationScreen(subCategory: subCategory)
+            case .selectProfessional(let subCategory):
+                SelectProfessionalScreen(subCategory: subCategory)
             }
         
         }

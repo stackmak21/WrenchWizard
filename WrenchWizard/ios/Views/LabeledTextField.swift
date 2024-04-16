@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct LabeledTextField<TrailingContent>: View where  TrailingContent: View {
+struct LabeledTextField<TrailingContent, LeadingContent>: View where  TrailingContent: View, LeadingContent: View {
     
 
     let label: String?
@@ -17,6 +17,7 @@ struct LabeledTextField<TrailingContent>: View where  TrailingContent: View {
     let lineLimit: Int
     @Binding var text: String
     let trailingContent: () -> TrailingContent
+    let leadingContent: () -> LeadingContent
     
     @Environment(\.isEnabled) private var isEnabled
     @State private var isFocused: Bool = false
@@ -25,10 +26,11 @@ struct LabeledTextField<TrailingContent>: View where  TrailingContent: View {
     init(
         label: String? = nil,
         placeholder: String,
-        lineLimit: Int,
+        lineLimit: Int = 1,
         text: Binding<String>,
         style: TextFieldStyleAttributes,
-        @ViewBuilder trailingContent: @escaping () -> TrailingContent
+        @ViewBuilder trailingContent: @escaping () -> TrailingContent,
+        @ViewBuilder leadingContent: @escaping () -> LeadingContent
     ) {
         
         self.label = label
@@ -37,6 +39,7 @@ struct LabeledTextField<TrailingContent>: View where  TrailingContent: View {
         self._text = text
         self.style = .outlined
         self.trailingContent = trailingContent
+        self.leadingContent = leadingContent
     }
     
     var body: some View{
@@ -56,9 +59,9 @@ struct LabeledTextField<TrailingContent>: View where  TrailingContent: View {
             }
             .padding(.horizontal, 16)
             .background(style.colors.backgroundColor(isEnabled: isEnabled, isFocused: isFocused))
-            .clipShape(RoundedRectangle(cornerRadius: 8))
+            .clipShape(RoundedRectangle(cornerRadius: 10))
             .overlay {
-                RoundedRectangle(cornerRadius: 8).stroke(style.colors.borderColor(isEnabled: isEnabled, isFocused: isFocused), lineWidth: 1)
+                RoundedRectangle(cornerRadius: 10).stroke(style.colors.borderColor(isEnabled: isEnabled, isFocused: isFocused), lineWidth: 1)
             }
             
         }
@@ -88,7 +91,8 @@ struct LabeledTextField_Previews: PreviewProvider {
             lineLimit: 1,
             text: .constant(""),
             style: .outlined,
-            trailingContent:{ Image(systemName: "xmark")}
+            trailingContent:{ Image(systemName: "xmark")},
+            leadingContent: {}
         )
         
     }
