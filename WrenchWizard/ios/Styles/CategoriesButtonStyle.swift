@@ -13,7 +13,7 @@ struct CategoriesButtonStyle: ButtonStyle{
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .font(Typography.regular(size: 16))
-            .background(configuration.isPressed ? Color.ContentBackground.contentBackgroundSecondary  : Color.white)
+            .background(configuration.isPressed ? Color.contentBackgroundSecondary  : Color.white)
             .foregroundColor(.mirage)
             .clipShape(RoundedRectangle(cornerRadius: 14))
             .shadowOffset(length: .long, x: 0.5, y: 1)
@@ -25,7 +25,7 @@ struct SubCategoriesButtonStyle: ButtonStyle{
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .font(Typography.regular(size: 16))
-            .background(configuration.isPressed ? Color.ContentBackground.contentBackgroundSecondary  : Color.white)
+            .background(configuration.isPressed ? Color.contentBackgroundSecondary  : Color.white)
             .foregroundColor(.mirage)
             .clipShape(RoundedRectangle(cornerRadius: 14))
             .overlay{
@@ -41,7 +41,7 @@ struct FilterButtonStyle: ButtonStyle{
             .font(Typography.regular(size: 18))
             .padding(.horizontal, 8)
             .padding(.vertical, 4)
-            .background(configuration.isPressed ? Color.ContentBackground.contentBackgroundSecondary  : Color.white)
+            .background(configuration.isPressed ? Color.contentBackgroundSecondary  : Color.white)
             .foregroundColor(.mirage)
             .clipShape(RoundedRectangle(cornerRadius: 8))
             .overlay{

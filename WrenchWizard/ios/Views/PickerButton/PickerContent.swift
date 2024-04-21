@@ -38,7 +38,7 @@ struct PickerContent<I, ItemContent>: View where I: Hashable, ItemContent: View 
                 //                    .frame(maxWidth: .infinity, alignment: .center)
                 //            }
                 //            .frame(height: 53)
-                //            .background(Color.ContentBackground.contentBackgroundPrimary)
+                //            .background(Color.contentBackgroundPrimary)
                 
                 ScrollView {
                     LazyVStack(spacing: 0) {
@@ -49,7 +49,7 @@ struct PickerContent<I, ItemContent>: View where I: Hashable, ItemContent: View 
                     }
                 }
             }
-            .background(Color.ContentBackground.contentBackgroundSecondary)
+            .background(Color.contentBackgroundSecondary)
             //        .navigationBarHidden(true)
             .navigationBarBackButtonHidden(true)
             .navigationTitle("Renovation")

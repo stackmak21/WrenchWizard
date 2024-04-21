@@ -7,6 +7,8 @@
 
 import Foundation
 
+let BASE_URL = "https://eeb8-2a02-587-c404-f700-bd03-e91b-9c7b-b7f7.ngrok-free.app"
+
 class NetworkingManager: Codable {
     
     static let shared = NetworkingManager()

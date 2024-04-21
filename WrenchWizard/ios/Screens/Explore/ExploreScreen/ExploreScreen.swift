@@ -32,7 +32,7 @@ struct ExploreContent: View {
                 }
             }
             
-            .background(Color.ContentBackground.contentBackgroundSecondary).ignoresSafeArea()
+            .background(Color.contentBackgroundSecondary).ignoresSafeArea()
             .onAppear(){
                 vm.fetchCategories()
             }

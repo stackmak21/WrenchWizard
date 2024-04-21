@@ -15,7 +15,7 @@ struct ClearActionButtonStyle: ButtonStyle {
             .padding(6)
             .foregroundColor(configuration.isPressed ? Color.black.opacity(0.3) : Color.black)
             .padding(2)
-            .background(configuration.isPressed ? Color.ContentBackground.contentBackgroundPrimary.opacity(0.3) : Color.ContentBackground.contentBackgroundPrimary)
+            .background(configuration.isPressed ? Color.contentBackgroundPrimary.opacity(0.3) : Color.contentBackgroundPrimary)
             .clipShape(Circle())
     }
 }
@@ -28,7 +28,7 @@ struct BackActionButtonStyle: ButtonStyle {
             .padding(12)
             .foregroundColor(configuration.isPressed ? Color.black.opacity(0.3) : Color.black)
             .padding(2)
-            .background(configuration.isPressed ? Color.ContentBackground.contentBackgroundPrimary.opacity(0.8) : Color.ContentBackground.contentBackgroundPrimary)
+            .background(configuration.isPressed ? Color.contentBackgroundPrimary.opacity(0.8) : Color.contentBackgroundPrimary)
             .clipShape(Circle())
             .padding()
     }

@@ -88,7 +88,7 @@ struct HomeScreen: View {
                 .padding(.leading, 16 + container.safeAreaInsets.leading)
                 .padding(.trailing, 16 + container.safeAreaInsets.trailing)
                 .padding(.bottom, container.safeAreaInsets.bottom)
-                .background(Color.ContentBackground.contentBackgroundSecondary.shadow(length: .short))
+                .background(Color.contentBackgroundSecondary.shadow(length: .short))
             }
             .navigationBarHidden(true)
             .edgesIgnoringSafeArea([.leading, .trailing, .bottom])

@@ -86,18 +86,18 @@ struct TextFieldTyporaphySet {
 }
 
 let outlinedTextFieldColors = TextFieldColorSet(
-    normalForeground: Color.TextField.normalForeground,
-    focusedForeground: Color.TextField.focusedForeground,
-    disabledForeground: Color.TextField.disabledForeground,
-    normalBackground: Color.TextField.normalBackground,
-    focusedBackground: Color.TextField.focusedBackground,
-    disabledBackground: Color.TextField.disabledBackground,
-    normalAccent: Color.TextField.normalAccent,
-    focusedAccent: Color.TextField.focusedAccent,
-    disabledAccent: Color.TextField.disabledAccent,
-    normalBorder: Color.TextField.normalBorder,
-    focusedBorder: Color.TextField.focusedBorder,
-    disabledBorder: Color.TextField.disabledBorder
+    normalForeground: Color.normalForeground,
+    focusedForeground: Color.focusedForeground,
+    disabledForeground: Color.disabledForeground,
+    normalBackground: Color.normalBackground,
+    focusedBackground: Color.focusedBackground,
+    disabledBackground: Color.disabledBackground,
+    normalAccent: Color.normalAccent,
+    focusedAccent: Color.focusedAccent,
+    disabledAccent: Color.disabledAccent,
+    normalBorder: Color.normalBorder,
+    focusedBorder: Color.focusedBorder,
+    disabledBorder: Color.disabledBorder
 )
 
 let outlinedTextFieldTypohraphy = TextFieldTyporaphySet(

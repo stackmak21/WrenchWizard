@@ -22,8 +22,8 @@ struct WrenchWizardApp: App {
     
     
     private func configureNavigationBar() {
-        let backgroundColor = UIColor(Color.NavigationBar.navigationBarBackground)
-        let foregroundColor = UIColor(Color.NavigationBar.navigationBarForeground)
+        let backgroundColor = UIColor(Color.navigationBarBackground)
+        let foregroundColor = UIColor(Color.navigationBarForeground)
         
         let coloredAppearance = UINavigationBarAppearance()
         coloredAppearance.configureWithOpaqueBackground()

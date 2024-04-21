@@ -84,7 +84,7 @@ private struct SubCategoryContent: View {
                         }
                         .padding(.horizontal)
                         .frame(maxWidth: .infinity, alignment: .leading)
-                        .background(Color.ContentBackground.contentBackgroundSecondary)
+                        .background(Color.contentBackgroundSecondary)
                         .clipShape(RoundedCornerShape(radius: 16, corners: [.topLeft, .topRight]))
                         .offset(y: -20)
                     }

@@ -83,14 +83,14 @@ struct ButtonColorSet: Equatable {
 //MARK: - Button Color Set Declaration
 var primaryButtonColors: ButtonColorSet {
     ButtonColorSet(
-        normalBackground: Color.Button.primaryNormalBackground,
-        normalForeground: Color.Button.primaryNormalForeground,
+        normalBackground: Color.primaryNormalBackground,
+        normalForeground: Color.primaryNormalForeground,
         normalBorder: Color.clear,
-        pressedBackground:  Color.Button.primaryPressedBackground,
-        pressedForeground: Color.Button.primaryPressedForeground,
+        pressedBackground:  Color.primaryPressedBackground,
+        pressedForeground: Color.primaryPressedForeground,
         pressedBorder: Color.clear,
-        disabledBackground: Color.Button.primaryDisabledBackground,
-        disabledForeground: Color.Button.primaryDisabledForeground,
+        disabledBackground: Color.primaryDisabledBackground,
+        disabledForeground: Color.primaryDisabledForeground,
         disabledBorder: Color.clear
     )
 }
@@ -103,8 +103,8 @@ var selectionButtonColors: ButtonColorSet {
         pressedBackground:  Color.clear,
         pressedForeground: Color.black.opacity(0.6),
         pressedBorder: Color.blue.opacity(0.6),
-        disabledBackground: Color.Button.primaryDisabledBackground,
-        disabledForeground: Color.Button.primaryDisabledForeground,
+        disabledBackground: Color.primaryDisabledBackground,
+        disabledForeground: Color.primaryDisabledForeground,
         disabledBorder: Color.clear
     )
 }

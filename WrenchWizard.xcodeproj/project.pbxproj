@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2524FCA83ADB99B8FCD22E12 /* Pods_WrenchWizard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1CF1D7FD3350901504604DF /* Pods_WrenchWizard.framework */; };
+		F917A6FA2BD46C1700B626E5 /* SelectionPickerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F917A6F92BD46C1700B626E5 /* SelectionPickerItem.swift */; };
+		F917A6FC2BD4768F00B626E5 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F917A6FB2BD4768F00B626E5 /* RadioButton.swift */; };
+		F917A6FE2BD4841D00B626E5 /* CountPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F917A6FD2BD4841D00B626E5 /* CountPicker.swift */; };
+		F917A7002BD4907300B626E5 /* CountButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F917A6FF2BD4907300B626E5 /* CountButtonStyle.swift */; };
 		F931B0532B8958800095BD92 /* CategoriesButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F931B0522B8958800095BD92 /* CategoriesButtonStyle.swift */; };
 		F931B0552B89E4430095BD92 /* ListingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F931B0542B89E4430095BD92 /* ListingItem.swift */; };
 		F931B0572B8A4F420095BD92 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F931B0562B8A4F420095BD92 /* Category.swift */; };
@@ -17,7 +21,6 @@
 		F931B05F2B8C056B0095BD92 /* FocusNative.swift in Sources */ = {isa = PBXBuildFile; fileRef = F931B05E2B8C056B0095BD92 /* FocusNative.swift */; };
 		F931B0632B8CDCEC0095BD92 /* ClearActionButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F931B0622B8CDCEC0095BD92 /* ClearActionButtonStyle.swift */; };
 		F931B0652B8D12810095BD92 /* SubCategoriesListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F931B0642B8D12810095BD92 /* SubCategoriesListScreen.swift */; };
-		F931B0692B8D3ECE0095BD92 /* DefinitionPickerContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F931B0682B8D3ECE0095BD92 /* DefinitionPickerContent.swift */; };
 		F931B0712B92A4F60095BD92 /* SubCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F931B0702B92A4F50095BD92 /* SubCategory.swift */; };
 		F931B07B2B932AD50095BD92 /* FlowStacks in Frameworks */ = {isa = PBXBuildFile; productRef = F931B07A2B932AD50095BD92 /* FlowStacks */; };
 		F931B0842B9356820095BD92 /* SubCategoriesRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = F931B0832B9356820095BD92 /* SubCategoriesRoute.swift */; };
@@ -28,7 +31,6 @@
 		F931B0952B94FDF20095BD92 /* NavigationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F931B0942B94FDF20095BD92 /* NavigationViewModel.swift */; };
 		F931B0972B968CAC0095BD92 /* SystemRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F931B0962B968CAC0095BD92 /* SystemRoutes.swift */; };
 		F931B0992B968ED00095BD92 /* NavigationDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F931B0982B968ED00095BD92 /* NavigationDirection.swift */; };
-		F93ED5612B9B77D200A204D3 /* DefinitionPickerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93ED5602B9B77D200A204D3 /* DefinitionPickerItem.swift */; };
 		F93ED5652B9CB1BD00A204D3 /* ExploreScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93ED5642B9CB1BD00A204D3 /* ExploreScreen.swift */; };
 		F93ED5682B9CBD1400A204D3 /* SubCategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93ED5672B9CBD1400A204D3 /* SubCategoriesViewModel.swift */; };
 		F93ED56A2B9D11AE00A204D3 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93ED5692B9D11AE00A204D3 /* BaseViewModel.swift */; };
@@ -39,7 +41,6 @@
 		F960AA922B75413A00944F6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F960AA912B75413A00944F6C /* Assets.xcassets */; };
 		F960AA952B75413A00944F6C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F960AA942B75413A00944F6C /* Preview Assets.xcassets */; };
 		F960AAA02B75468D00944F6C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F960AAA22B75468D00944F6C /* Localizable.strings */; };
-		F960AAC12B75532800944F6C /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F960AAC02B75532800944F6C /* Colors.swift */; };
 		F960AAC32B75533200944F6C /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = F960AAC22B75533200944F6C /* Typography.swift */; };
 		F960AAC62B7555A200944F6C /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F960AAC52B7555A200944F6C /* FontExtensions.swift */; };
 		F960AACA2B76C73600944F6C /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = F960AAC92B76C73600944F6C /* swiftgen.yml */; };
@@ -75,7 +76,6 @@
 		F960AB2C2B7E5F2500944F6C /* PickerContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F960AB2B2B7E5F2500944F6C /* PickerContent.swift */; };
 		F960AB2E2B7E5F8700944F6C /* ToolbarItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = F960AB2D2B7E5F8700944F6C /* ToolbarItems.swift */; };
 		F960AB322B7E7C9D00944F6C /* LabeledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F960AB312B7E7C9D00944F6C /* LabeledTextField.swift */; };
-		F960AB342B7EB05500944F6C /* ExpandFilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F960AB332B7EB05500944F6C /* ExpandFilterButton.swift */; };
 		F960AB3A2B824BCA00944F6C /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F960AB392B824BCA00944F6C /* NetworkingManager.swift */; };
 		F960AB402B824EB400944F6C /* Mechanic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F960AB3F2B824EB400944F6C /* Mechanic.swift */; };
 		F960AB422B840E3900944F6C /* MechanicListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F960AB412B840E3900944F6C /* MechanicListItem.swift */; };
@@ -100,6 +100,10 @@
 		553BA34D362BA1EB19938F1F /* Pods-WrenchWizard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WrenchWizard.debug.xcconfig"; path = "Target Support Files/Pods-WrenchWizard/Pods-WrenchWizard.debug.xcconfig"; sourceTree = "<group>"; };
 		A1CF1D7FD3350901504604DF /* Pods_WrenchWizard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WrenchWizard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF2A94AC05910439EF705590 /* Pods-WrenchWizard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WrenchWizard.release.xcconfig"; path = "Target Support Files/Pods-WrenchWizard/Pods-WrenchWizard.release.xcconfig"; sourceTree = "<group>"; };
+		F917A6F92BD46C1700B626E5 /* SelectionPickerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionPickerItem.swift; sourceTree = "<group>"; };
+		F917A6FB2BD4768F00B626E5 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
+		F917A6FD2BD4841D00B626E5 /* CountPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountPicker.swift; sourceTree = "<group>"; };
+		F917A6FF2BD4907300B626E5 /* CountButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountButtonStyle.swift; sourceTree = "<group>"; };
 		F931B0522B8958800095BD92 /* CategoriesButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesButtonStyle.swift; sourceTree = "<group>"; };
 		F931B0542B89E4430095BD92 /* ListingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingItem.swift; sourceTree = "<group>"; };
 		F931B0562B8A4F420095BD92 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
@@ -109,7 +113,6 @@
 		F931B05E2B8C056B0095BD92 /* FocusNative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusNative.swift; sourceTree = "<group>"; };
 		F931B0622B8CDCEC0095BD92 /* ClearActionButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearActionButtonStyle.swift; sourceTree = "<group>"; };
 		F931B0642B8D12810095BD92 /* SubCategoriesListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoriesListScreen.swift; sourceTree = "<group>"; };
-		F931B0682B8D3ECE0095BD92 /* DefinitionPickerContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionPickerContent.swift; sourceTree = "<group>"; };
 		F931B0702B92A4F50095BD92 /* SubCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategory.swift; sourceTree = "<group>"; };
 		F931B0832B9356820095BD92 /* SubCategoriesRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoriesRoute.swift; sourceTree = "<group>"; };
 		F931B0852B9357CA0095BD92 /* NavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
@@ -119,7 +122,6 @@
 		F931B0942B94FDF20095BD92 /* NavigationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewModel.swift; sourceTree = "<group>"; };
 		F931B0962B968CAC0095BD92 /* SystemRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemRoutes.swift; sourceTree = "<group>"; };
 		F931B0982B968ED00095BD92 /* NavigationDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDirection.swift; sourceTree = "<group>"; };
-		F93ED5602B9B77D200A204D3 /* DefinitionPickerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionPickerItem.swift; sourceTree = "<group>"; };
 		F93ED5642B9CB1BD00A204D3 /* ExploreScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreScreen.swift; sourceTree = "<group>"; };
 		F93ED5672B9CBD1400A204D3 /* SubCategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoriesViewModel.swift; sourceTree = "<group>"; };
 		F93ED5692B9D11AE00A204D3 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
@@ -149,7 +151,6 @@
 		F960AAB22B7546E500944F6C /* faktum_extra_bold_italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = faktum_extra_bold_italic.ttf; sourceTree = "<group>"; };
 		F960AAB32B7546E500944F6C /* faktum_light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = faktum_light.ttf; sourceTree = "<group>"; };
 		F960AAB42B7546E500944F6C /* faktum_semi_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = faktum_semi_bold.ttf; sourceTree = "<group>"; };
-		F960AAC02B75532800944F6C /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		F960AAC22B75533200944F6C /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
 		F960AAC52B7555A200944F6C /* FontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtensions.swift; sourceTree = "<group>"; };
 		F960AAC92B76C73600944F6C /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
@@ -168,7 +169,6 @@
 		F960AB2B2B7E5F2500944F6C /* PickerContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerContent.swift; sourceTree = "<group>"; };
 		F960AB2D2B7E5F8700944F6C /* ToolbarItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarItems.swift; sourceTree = "<group>"; };
 		F960AB312B7E7C9D00944F6C /* LabeledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabeledTextField.swift; sourceTree = "<group>"; };
-		F960AB332B7EB05500944F6C /* ExpandFilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandFilterButton.swift; sourceTree = "<group>"; };
 		F960AB392B824BCA00944F6C /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		F960AB3F2B824EB400944F6C /* Mechanic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mechanic.swift; sourceTree = "<group>"; };
 		F960AB412B840E3900944F6C /* MechanicListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MechanicListItem.swift; sourceTree = "<group>"; };
@@ -357,7 +357,6 @@
 		F960AABF2B75530F00944F6C /* Theme */ = {
 			isa = PBXGroup;
 			children = (
-				F960AAC02B75532800944F6C /* Colors.swift */,
 				F960AAC22B75533200944F6C /* Typography.swift */,
 			);
 			path = Theme;
@@ -375,17 +374,17 @@
 		F960AAE32B77757600944F6C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F917A6FB2BD4768F00B626E5 /* RadioButton.swift */,
 				F960AB242B7BE9F600944F6C /* PickerButton */,
 				F960AAF02B7793E000944F6C /* Shadow.swift */,
 				F960AB202B7BE52800944F6C /* ExploreFilterBar.swift */,
 				F960AB2D2B7E5F8700944F6C /* ToolbarItems.swift */,
 				F960AB312B7E7C9D00944F6C /* LabeledTextField.swift */,
-				F960AB332B7EB05500944F6C /* ExpandFilterButton.swift */,
 				F960AB412B840E3900944F6C /* MechanicListItem.swift */,
 				F931B0542B89E4430095BD92 /* ListingItem.swift */,
-				F931B0682B8D3ECE0095BD92 /* DefinitionPickerContent.swift */,
-				F93ED5602B9B77D200A204D3 /* DefinitionPickerItem.swift */,
 				F99D30192BCF1B8F0013442D /* ProfessionalListItem.swift */,
+				F917A6F92BD46C1700B626E5 /* SelectionPickerItem.swift */,
+				F917A6FD2BD4841D00B626E5 /* CountPicker.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -431,6 +430,7 @@
 				F9828D182BA39A5D000DBB69 /* SelectionButtonStyle.swift */,
 				F9828D232BA5DCF0000DBB69 /* PrimaryButtonStyle.swift */,
 				F9828D252BA5FDA2000DBB69 /* RoundedCornerModifier.swift */,
+				F917A6FF2BD4907300B626E5 /* CountButtonStyle.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -671,8 +671,9 @@
 				F931B05F2B8C056B0095BD92 /* FocusNative.swift in Sources */,
 				F960AAF52B77C17E00944F6C /* HomeViewModel.swift in Sources */,
 				F9828D1E2BA4BE52000DBB69 /* JobConfigurationSelections.swift in Sources */,
-				F960AAC12B75532800944F6C /* Colors.swift in Sources */,
 				F931B0632B8CDCEC0095BD92 /* ClearActionButtonStyle.swift in Sources */,
+				F917A6FA2BD46C1700B626E5 /* SelectionPickerItem.swift in Sources */,
+				F917A7002BD4907300B626E5 /* CountButtonStyle.swift in Sources */,
 				F99D30162BCE5DA60013442D /* SelectProfessionalDataService.swift in Sources */,
 				F960AAFF2B78BB9200944F6C /* ExploreViewModel.swift in Sources */,
 				F960AB2C2B7E5F2500944F6C /* PickerContent.swift in Sources */,
@@ -689,15 +690,14 @@
 				F931B0592B8BEC1C0095BD92 /* ButtonStyle.swift in Sources */,
 				F99D301A2BCF1B8F0013442D /* ProfessionalListItem.swift in Sources */,
 				F9828D1B2BA49DDB000DBB69 /* Selection.swift in Sources */,
-				F93ED5612B9B77D200A204D3 /* DefinitionPickerItem.swift in Sources */,
 				F960AB2E2B7E5F8700944F6C /* ToolbarItems.swift in Sources */,
 				F931B0842B9356820095BD92 /* SubCategoriesRoute.swift in Sources */,
 				F960AB3A2B824BCA00944F6C /* NetworkingManager.swift in Sources */,
 				F931B0862B9357CA0095BD92 /* NavigationRouter.swift in Sources */,
 				F960AB422B840E3900944F6C /* MechanicListItem.swift in Sources */,
-				F960AB342B7EB05500944F6C /* ExpandFilterButton.swift in Sources */,
 				F9828D172B9F6C4E000DBB69 /* Routes.swift in Sources */,
 				F93ED5742B9D9CEB00A204D3 /* JobConfigurationScreen.swift in Sources */,
+				F917A6FC2BD4768F00B626E5 /* RadioButton.swift in Sources */,
 				F931B0552B89E4430095BD92 /* ListingItem.swift in Sources */,
 				F960AAEF2B778ECF00944F6C /* HomeScreen.swift in Sources */,
 				F960AB402B824EB400944F6C /* Mechanic.swift in Sources */,
@@ -709,7 +709,6 @@
 				F931B0972B968CAC0095BD92 /* SystemRoutes.swift in Sources */,
 				F931B0712B92A4F60095BD92 /* SubCategory.swift in Sources */,
 				F931B08E2B93ECAE0095BD92 /* Coordinator.swift in Sources */,
-				F931B0692B8D3ECE0095BD92 /* DefinitionPickerContent.swift in Sources */,
 				F960AA8E2B75413800944F6C /* WrenchWizardApp.swift in Sources */,
 				F93ED5722B9D9C1800A204D3 /* JobConfigurationViewModel.swift in Sources */,
 				F9828D262BA5FDA2000DBB69 /* RoundedCornerModifier.swift in Sources */,
@@ -723,6 +722,7 @@
 				F960AB322B7E7C9D00944F6C /* LabeledTextField.swift in Sources */,
 				F9828D2B2BA6E8E9000DBB69 /* AccessCameraView.swift in Sources */,
 				F931B0952B94FDF20095BD92 /* NavigationViewModel.swift in Sources */,
+				F917A6FE2BD4841D00B626E5 /* CountPicker.swift in Sources */,
 				F9828D222BA5AEFF000DBB69 /* SwiftUIView.swift in Sources */,
 				F9828D242BA5DCF0000DBB69 /* PrimaryButtonStyle.swift in Sources */,
 				F93ED5652B9CB1BD00A204D3 /* ExploreScreen.swift in Sources */,
