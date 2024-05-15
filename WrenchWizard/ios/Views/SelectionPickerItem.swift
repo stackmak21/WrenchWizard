@@ -9,19 +9,18 @@ import SwiftUI
 
 struct SelectionPickerItem: View {
     
-    @State var isSelected: Bool = true
+    @Binding var isSelected: Bool
     let selection: SubCategory // Type should be changed
     
     var body: some View {
         Button {
-            withAnimation {
                 isSelected = !isSelected
-            }
         } label: {
             selectionPicker
                 
         }
         .buttonStyle(PlainButtonStyle())
+        .animation(.easeInOut, value: isSelected)
     }
     
     @ViewBuilder var selectionPicker: some View{
@@ -38,7 +37,7 @@ struct SelectionPickerItem: View {
                 .padding(.horizontal)
         }
         .frame(maxWidth: .infinity)
-        .frame(maxHeight: 48)
+        .frame(height: 48)
         .overlay{
             RoundedRectangle(cornerRadius: 12).stroke(borderColor, lineWidth: 1)
         }
@@ -57,8 +56,8 @@ struct SelectionPickerItem: View {
 
 #Preview {
     Group{
-        SelectionPickerItem( selection: SubCategory(id: 1, title: "Option 1", categoryId: 2))
-        SelectionPickerItem(selection: SubCategory(id: 1, title: "Option 2", categoryId: 2))
+        SelectionPickerItem( isSelected: .constant(true), selection: SubCategory(id: 1, title: "Option 1", categoryId: 2))
+        SelectionPickerItem(isSelected: .constant(false), selection: SubCategory(id: 1, title: "Option 2", categoryId: 2))
     }
     .padding(.horizontal)
 }

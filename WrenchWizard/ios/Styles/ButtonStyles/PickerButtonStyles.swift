@@ -10,6 +10,7 @@ import SwiftUI
 
 struct PickerButtonStyle: ButtonStyle {
     var isEnabled: Bool
+    var isError: Bool
     var isPlaceholderVisible: Bool
     let style: TextFieldStyleAttributes
     
@@ -19,7 +20,7 @@ struct PickerButtonStyle: ButtonStyle {
             .clipShape(RoundedRectangle(cornerRadius: 8))
             .foregroundColor(foregroundColor(configuration))
             .overlay(RoundedRectangle(cornerRadius: 8).stroke(
-                style.colors.accentColor(isEnabled: isEnabled, isFocused: configuration.isPressed),
+                style.colors.accentColor(isEnabled: isEnabled, isFocused: configuration.isPressed, isError: isError),
                 lineWidth: 1
             ))
     }

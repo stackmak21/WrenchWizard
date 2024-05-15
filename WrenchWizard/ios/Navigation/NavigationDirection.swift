@@ -14,6 +14,8 @@ struct NavigationDirection {
 
 enum NavigationCommand{
     case home
+    case login
+    case register
     case subCategories(category: Category)
     case subCategory(subCategory: SubCategory)
     case selectProfessional(_ subCategory: SubCategory)

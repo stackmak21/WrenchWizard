@@ -9,7 +9,9 @@ import Foundation
 import SwiftUI
 
 struct Typography {
-    static let button: Font = Typography.semiBold(size: 16)
+    
+    static let button: Font = Typography.semiBold(size: 20)
+    
     static let textFieldContent: Font = Typography.medium(size: 14)
     
     

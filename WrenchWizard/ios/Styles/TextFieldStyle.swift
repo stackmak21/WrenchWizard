@@ -25,6 +25,17 @@ struct TextFieldStyleAttributes {
         outlined.textFieldHeight = smallTextFieldHeight
         return outlined
     }
+    
+    
+    static func custom(
+        textFieldHeight: CGFloat,
+        typography: TextFieldTyporaphySet = outlinedTextFieldTypohraphy,
+        colors: TextFieldColorSet = outlinedTextFieldColors
+    ) -> TextFieldStyleAttributes{
+        var outlined = TextFieldStyleAttributes.outlined
+        outlined.textFieldHeight = textFieldHeight
+        return outlined
+    }
 }
 
 struct TextFieldColorSet {
@@ -45,6 +56,10 @@ struct TextFieldColorSet {
     var focusedBorder: Color
     var disabledBorder: Color
     
+    var helper: Color
+    var error: Color
+    var label: Color
+    
     
     func backgroundColor(isEnabled: Bool, isFocused: Bool) -> Color {
         if isEnabled {
@@ -62,19 +77,31 @@ struct TextFieldColorSet {
         }
     }
     
-    func accentColor(isEnabled: Bool, isFocused: Bool) -> Color {
-        if isEnabled {
-                return isFocused ? focusedAccent : normalAccent
-        } else {
-            return disabledAccent
-        }
-    }
-    
     func borderColor(isEnabled: Bool, isFocused: Bool) -> Color {
         if isEnabled {
             return isFocused ? focusedBorder : normalBorder
         } else {
             return disabledForeground
+        }
+    }
+    
+    func accentColor(isEnabled: Bool, isFocused: Bool, isError: Bool) -> Color {
+        if isEnabled {
+            if isError {
+                return error
+            } else {
+                return isFocused ? focusedAccent : normalAccent
+            }
+        } else {
+            return disabledAccent
+        }
+    }
+
+    func helperColor(isEnabled: Bool, isError: Bool) -> Color {
+        if isEnabled {
+            return isError ? error : helper
+        } else {
+            return disabledAccent
         }
     }
 
@@ -83,6 +110,8 @@ struct TextFieldColorSet {
 struct TextFieldTyporaphySet {
     var content: Font
     var label: Font
+    var hint: Font
+    var helper: Font
 }
 
 let outlinedTextFieldColors = TextFieldColorSet(
@@ -97,13 +126,19 @@ let outlinedTextFieldColors = TextFieldColorSet(
     disabledAccent: Color.disabledAccent,
     normalBorder: Color.normalBorder,
     focusedBorder: Color.focusedBorder,
-    disabledBorder: Color.disabledBorder
+    disabledBorder: Color.disabledBorder,
+    helper: Color.helper,
+    error: Color.error,
+    label: Color.coal
 )
 
 let outlinedTextFieldTypohraphy = TextFieldTyporaphySet(
-    content: Typography.medium(size: 14),
-    label: Typography.semiBold(size: 11)
+    content: Typography.medium(size: 16),
+    label: Typography.semiBold(size: 16),
+    hint: Typography.medium(size: 12),
+    helper: Typography.medium(size: 14)
 )
 
-let normalTextFieldHeight: CGFloat = 48
-let smallTextFieldHeight: CGFloat = 40
+let normalTextFieldHeight: CGFloat = 54
+let smallTextFieldHeight: CGFloat = 48
+

@@ -31,12 +31,12 @@ struct ExploreContent: View {
                         .padding(.bottom)
                 }
             }
-            
             .background(Color.contentBackgroundSecondary).ignoresSafeArea()
             .onAppear(){
                 vm.fetchCategories()
             }
         }
+        .hideKeyboardWhenTappedAround()
     }
     
     @ViewBuilder func categoriesGrid(selectionSize size: CGFloat) -> some View {
@@ -101,13 +101,19 @@ struct ExploreContent: View {
                     .font(Typography.regular(size: 16))
                     .foregroundColor(.alto)
                     .padding(.bottom, 12)
+               
+
                 LabeledTextField(
-                    placeholder: "Search",
-                    lineLimit: 1,
-                    text: Binding(get: {vm.searchTerm}, set: {vm.searchTerm = $0}),
-                    style: .outlined,
-                    trailingContent:{ },
-                    leadingContent: {}
+                    style: .outlinedSmall,
+                    placeholder: "search",
+                    text: Binding(
+                        get: {
+                            vm.searchTerm
+                        },
+                        set: {
+                            vm.searchTerm = $0
+                        }
+                    )
                 )
             }
             .frame(maxWidth: .infinity, alignment: .leading)

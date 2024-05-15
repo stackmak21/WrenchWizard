@@ -15,7 +15,7 @@ struct SelectionButtonStyle: ButtonStyle {
     
     init(isEnabled: Bool) {
         self.isEnabled = isEnabled
-        style = .selection
+        style = .primary
     }
     
     func makeBody(configuration: Configuration) -> some View {

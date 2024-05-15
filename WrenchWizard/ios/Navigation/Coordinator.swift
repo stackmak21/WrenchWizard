@@ -12,6 +12,8 @@ import FlowStacks
 typealias NavigationStack = Routes<Screen>
 
 enum Screen: Equatable {
+    case register
+    case login
     case home
     case subCategories(category: Category)
     case subCategory(subCategory: SubCategory)
@@ -23,7 +25,7 @@ class Coordinator: ObservableObject {
     @Published var stack: NavigationStack
     
     init() {
-        stack = [.root(.home, embedInNavigationView: true)]
+        stack = [.root(.login, embedInNavigationView: true)]
     }
 }
 
@@ -42,6 +44,10 @@ struct HostView: View {
                 JobConfigurationScreen(subCategory: subCategory)
             case .selectProfessional(let subCategory):
                 SelectProfessionalScreen(subCategory: subCategory)
+            case .login:
+                LoginScreen()
+            case .register:
+                RegisterScreen()
             }
         
         }

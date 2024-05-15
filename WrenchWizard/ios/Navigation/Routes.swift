@@ -15,3 +15,10 @@ var exploreRoutes: [NavigationRoute] {
         SelectProfessionalRoute()
     ]
 }
+
+var connectRoutes: [NavigationRoute] {
+    return [
+        LoginRoute(),
+        RegisterRoute()
+    ]
+}

@@ -38,10 +38,10 @@ struct CountPicker: View {
         Button {
             decreaseQuantity()
         } label: {
-//            Image(systemName: "minus")
-//                .resizable()
-//                .frame(width: 18, height: 2)
-            Text("-")
+            Image(systemName: "minus")
+                .resizable()
+                .frame(width: 18, height: 2)
+                .padding()
         }
         .buttonStyle(CountButtonStyle())
     }
@@ -59,7 +59,9 @@ struct CountPicker: View {
     
     
     private func decreaseQuantity(){
-        quantity -= 1
+        if quantity > 0{
+            quantity -= 1
+        }
     }
     
     private func increaseQuantity(){

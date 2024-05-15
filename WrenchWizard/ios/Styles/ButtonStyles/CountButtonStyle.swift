@@ -12,7 +12,7 @@ struct CountButtonStyle: ButtonStyle {
         configuration.label
             .foregroundColor(.coal)
             .padding()
-            .background(.red)
+            .background(.white.opacity(0.001))
             
             
     }

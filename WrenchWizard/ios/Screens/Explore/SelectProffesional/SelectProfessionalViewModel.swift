@@ -18,7 +18,7 @@ class SelectProfessionalViewModel: BaseViewModel{
         do {
             isLoading = true
             proffesionals = try await selectProffesionalDataService.fetchProffesionals()
-        } catch {
+        } catch(let error) {
             print("Failed to fetch proffesionals with error: \(error)")
         }
     }

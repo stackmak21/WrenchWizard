@@ -12,10 +12,10 @@ struct HomeScreen: View {
     @StateObject private var homeViewModel: HomeViewModel = HomeViewModel()
     
     var body: some View {
-        GeometryReader { container in
             VStack(spacing: 0) {
+                GeometryReader { container in
                 ZStack {
-                    switch homeViewModel.activeScreen {
+                    switch homeViewModel.activeTab {
                     case .home:
                         ExploreScreen()
                     case .myJobs:
@@ -27,72 +27,74 @@ struct HomeScreen: View {
                     case .account:
                         EmptyView()
                     }
-                   
+                    
                 }
                 .padding(.leading, container.safeAreaInsets.leading)
                 .padding(.trailing, container.safeAreaInsets.trailing)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-                
+                //                .frame(height: 300)
+            }
                 HStack {
                     TabItem(
                         title: "Home",
                         image: Image(systemName: "house.fill"),
                         isNotificationVisible: false,
-                        isSelected: homeViewModel.activeScreen == .home
+                        isSelected: homeViewModel.activeTab == .home
                     )
                     .onTapGesture {
-                        homeViewModel.activeScreen = .home
+                        homeViewModel.activeTab = .home
                     }
                     Spacer()
                     TabItem(
                         title: "My Jobs",
                         image: Image(systemName: "doc.text.fill"),
                         isNotificationVisible: false,
-                        isSelected: homeViewModel.activeScreen == .myJobs
+                        isSelected: homeViewModel.activeTab == .myJobs
                     )
                     .onTapGesture {
-                        homeViewModel.activeScreen = .myJobs
+                        homeViewModel.activeTab = .myJobs
                     }
                     Spacer()
                     TabItem(
                         title: "Post",
                         image: Image(systemName: "plus.circle.fill"),
                         isNotificationVisible: false,
-                        isSelected: homeViewModel.activeScreen == .post
+                        isSelected: homeViewModel.activeTab == .post
                     )
                     .onTapGesture {
-                        homeViewModel.activeScreen = .post
+                        homeViewModel.activeTab = .post
                     }
                     Spacer()
                     TabItem(
                         title: "Message",
                         image: Image(systemName: "bolt.horizontal.circle.fill"),
                         isNotificationVisible: false,
-                        isSelected: homeViewModel.activeScreen == .messages
+                        isSelected: homeViewModel.activeTab == .messages
                     )
                     .onTapGesture {
-                        homeViewModel.activeScreen = .messages
+                        homeViewModel.activeTab = .messages
                     }
                     Spacer()
                     TabItem(
                         title: Strings.account,
                         image: Image(systemName: "person.fill"),
                         isNotificationVisible: true,
-                        isSelected: homeViewModel.activeScreen == .account
+                        isSelected: homeViewModel.activeTab == .account
                     )
                     .onTapGesture {
-                        homeViewModel.activeScreen = .account
+                        homeViewModel.activeTab = .account
                     }
                 }
+                .ignoresSafeArea(.keyboard)
                 .frame(height: 70)
-                .padding(.leading, 16 + container.safeAreaInsets.leading)
-                .padding(.trailing, 16 + container.safeAreaInsets.trailing)
-                .padding(.bottom, container.safeAreaInsets.bottom)
+                .padding(.leading, 16)
+                .padding(.trailing, 16)
+                .padding(.bottom)
                 .background(Color.contentBackgroundSecondary.shadow(length: .short))
             }
             .navigationBarHidden(true)
             .edgesIgnoringSafeArea([.leading, .trailing, .bottom])
-        }
+        
     }
 }
 

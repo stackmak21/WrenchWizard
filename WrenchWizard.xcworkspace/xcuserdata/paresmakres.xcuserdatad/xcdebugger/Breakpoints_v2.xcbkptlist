@@ -108,8 +108,8 @@
             filePath = "WrenchWizard/ios/Navigation/Coordinator.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -124,8 +124,8 @@
             filePath = "WrenchWizard/ios/Navigation/Coordinator.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -411,8 +411,8 @@
             filePath = "WrenchWizard/ios/Navigation/NavigationRouter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "handleNavigationCommand(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -421,6 +421,22 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "4E897371-EEDE-43F9-A373-BC98E009A038"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WrenchWizard/ios/Navigation/NavigationRouter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "handleNavigationCommand(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E1DE48B3-BEC3-4BFD-B257-74E46A8E1503"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -436,22 +452,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E1DE48B3-BEC3-4BFD-B257-74E46A8E1503"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "WrenchWizard/ios/Navigation/NavigationRouter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "handleNavigationCommand(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "E58A52F0-810C-4125-ACAF-02CEC4ECEC1A"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -459,8 +459,8 @@
             filePath = "WrenchWizard/ios/Navigation/Coordinator.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -510,6 +510,326 @@
             startingLineNumber = "32"
             endingLineNumber = "32"
             landmarkName = "progressBarVolume()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "48DE5873-4175-418B-A478-B2BBC44E8275"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WrenchWizard/ios/Screens/Login/LoginAction.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "call(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "48DE5873-4175-418B-A478-B2BBC44E8275 - da841a05b7408992"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WrenchWizard.LoginAction.call(completion: (WrenchWizard.LoginResponse) -&gt; ()) -&gt; ()"
+                  moduleName = "WrenchWizard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paresmakres/Documents/GitHub/WrenchWizard/WrenchWizard/ios/Screens/Login/LoginAction.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "2136">
+               </Location>
+               <Location
+                  uuid = "48DE5873-4175-418B-A478-B2BBC44E8275 - da841a05b740890f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WrenchWizard.LoginAction.call(completion: (WrenchWizard.LoginResponse) -&gt; ()) -&gt; ()"
+                  moduleName = "WrenchWizard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paresmakres/Documents/GitHub/WrenchWizard/WrenchWizard/ios/Screens/Login/LoginAction.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "2988">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ACB9FEE7-2507-44ED-BEE0-C432FCF5ABB6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WrenchWizard/ios/Screens/Login/LoginAction.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "call(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "ACB9FEE7-2507-44ED-BEE0-C432FCF5ABB6 - aac9c88775c889c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in WrenchWizard.LoginAction.call(completion: (WrenchWizard.LoginResponse) -&gt; ()) -&gt; ()"
+                  moduleName = "WrenchWizard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paresmakres/Documents/GitHub/WrenchWizard/WrenchWizard/ios/Screens/Login/LoginAction.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "324">
+               </Location>
+               <Location
+                  uuid = "ACB9FEE7-2507-44ED-BEE0-C432FCF5ABB6 - aac9c88775c889c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in WrenchWizard.LoginAction.call(completion: (WrenchWizard.LoginResponse) -&gt; ()) -&gt; ()"
+                  moduleName = "WrenchWizard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paresmakres/Documents/GitHub/WrenchWizard/WrenchWizard/ios/Screens/Login/LoginAction.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "1120">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "530984A9-CE37-42D2-ACB8-2F218FDAFA65"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WrenchWizard/ios/Screens/Login/LoginAction.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "call(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "530984A9-CE37-42D2-ACB8-2F218FDAFA65 - aac9c88775c889c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in WrenchWizard.LoginAction.call(completion: (WrenchWizard.LoginResponse) -&gt; ()) -&gt; ()"
+                  moduleName = "WrenchWizard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paresmakres/Documents/GitHub/WrenchWizard/WrenchWizard/ios/Screens/Login/LoginAction.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "1120">
+               </Location>
+               <Location
+                  uuid = "530984A9-CE37-42D2-ACB8-2F218FDAFA65 - aac9c88775c889a7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in WrenchWizard.LoginAction.call(completion: (WrenchWizard.LoginResponse) -&gt; ()) -&gt; ()"
+                  moduleName = "WrenchWizard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paresmakres/Documents/GitHub/WrenchWizard/WrenchWizard/ios/Screens/Login/LoginAction.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "200">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "448E78BD-76A3-4C4C-A151-E75F8410F4CA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WrenchWizard/ios/Screens/Login/LoginAction.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "call(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "448E78BD-76A3-4C4C-A151-E75F8410F4CA - aac9c88775c88812"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in WrenchWizard.LoginAction.call(completion: (WrenchWizard.LoginResponse) -&gt; ()) -&gt; ()"
+                  moduleName = "WrenchWizard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paresmakres/Documents/GitHub/WrenchWizard/WrenchWizard/ios/Screens/Login/LoginAction.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "256">
+               </Location>
+               <Location
+                  uuid = "448E78BD-76A3-4C4C-A151-E75F8410F4CA - aac9c88775c888ed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in WrenchWizard.LoginAction.call(completion: (WrenchWizard.LoginResponse) -&gt; ()) -&gt; ()"
+                  moduleName = "WrenchWizard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paresmakres/Documents/GitHub/WrenchWizard/WrenchWizard/ios/Screens/Login/LoginAction.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "2544">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "61443A4E-2A74-4958-932B-428EB6C72A5D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WrenchWizard/ios/Views/Buttons/ActionButton.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A470B7F2-78FF-469E-84D3-9E43907CD571"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WrenchWizard/ios/Screens/Login/LoginAction.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "call(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A470B7F2-78FF-469E-84D3-9E43907CD571 - da841a05b7408bc1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WrenchWizard.LoginAction.call(completion: (WrenchWizard.LoginResponse) -&gt; ()) -&gt; ()"
+                  moduleName = "WrenchWizard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paresmakres/Documents/GitHub/WrenchWizard/WrenchWizard/ios/Screens/Login/LoginAction.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "2568">
+               </Location>
+               <Location
+                  uuid = "A470B7F2-78FF-469E-84D3-9E43907CD571 - da841a05b7408bc1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WrenchWizard.LoginAction.call(completion: (WrenchWizard.LoginResponse) -&gt; ()) -&gt; ()"
+                  moduleName = "WrenchWizard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paresmakres/Documents/GitHub/WrenchWizard/WrenchWizard/ios/Screens/Login/LoginAction.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "2712">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5AF75707-9C71-4791-A8F2-1FB06903F0C7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WrenchWizard/ios/Screens/Login/LoginAction.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "call(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5AF75707-9C71-4791-A8F2-1FB06903F0C7 - da841a05b740890f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WrenchWizard.LoginAction.call(completion: (WrenchWizard.LoginResponse) -&gt; ()) -&gt; ()"
+                  moduleName = "WrenchWizard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paresmakres/Documents/GitHub/WrenchWizard/WrenchWizard/ios/Screens/Login/LoginAction.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "1756">
+               </Location>
+               <Location
+                  uuid = "5AF75707-9C71-4791-A8F2-1FB06903F0C7 - da841a05b740890f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WrenchWizard.LoginAction.call(completion: (WrenchWizard.LoginResponse) -&gt; ()) -&gt; ()"
+                  moduleName = "WrenchWizard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paresmakres/Documents/GitHub/WrenchWizard/WrenchWizard/ios/Screens/Login/LoginAction.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "1884">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0FD1E517-2D77-4B60-B0F9-8EE509FC1F5C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WrenchWizard/ios/Screens/Login/LoginAction.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "call(completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

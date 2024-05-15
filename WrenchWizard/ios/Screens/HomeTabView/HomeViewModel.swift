@@ -9,12 +9,12 @@ import Foundation
 
 
 class HomeViewModel: ObservableObject {
-    @Published var activeScreen: ActiveScreen = .home
+    @Published var activeTab: ActiveTab = .home
     
 }
 
 
-enum ActiveScreen: String {
+enum ActiveTab: String {
     case home
     case myJobs
     case post

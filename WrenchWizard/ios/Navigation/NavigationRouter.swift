@@ -15,8 +15,9 @@ struct NavigationRouter {
         return [
             systemRoutes,
             exploreRoutes,
+            connectRoutes,
             [HomeRoute()]
-        ].flatMap({ $0 })
+        ].flatMap{ $0 }
     }
     
     init(coordinator: Coordinator, featureRoutes: [NavigationRoute]) {
