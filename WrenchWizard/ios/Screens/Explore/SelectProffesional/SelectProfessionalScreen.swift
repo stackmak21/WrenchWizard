@@ -20,14 +20,17 @@ struct SelectProffesionalContent: View {
     
     @ObservedObject var vm : SelectProfessionalViewModel
     let subCategory: SubCategory
+    let user = UserDetails.shared.userDetails
     
     var body: some View {
         VStack(spacing: 0){
             ProgressView(value: 0.25, total: 1)
             ScrollView(showsIndicators: false){
                 HStack{
-                    Text("120 Proffesionals")
-                        .font(Typography.semiBold(size: 18))
+                    if let user = vm.user{
+                        Text(user.firstName)
+                            .font(Typography.semiBold(size: 18))
+                    }
                     Spacer()
                     Button {
                         

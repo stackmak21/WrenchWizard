@@ -11,7 +11,7 @@ class RegisterViewModel: BaseViewModel {
     
     @Published var username: String = ""
     @Published var password: String = ""
-    @Published var user: LoginResponse? = nil
+//    @Published var user: LoginResponse? = nil
     
     func login(){
         

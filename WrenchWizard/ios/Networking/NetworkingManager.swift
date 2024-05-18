@@ -7,7 +7,7 @@
 
 import Foundation
 
-let BASE_URL = "https://92f1-2a02-587-c432-9f00-69ae-d6c1-719b-cdc1.ngrok-free.app"
+let BASE_URL = "https://a7fb-2a02-587-c432-9f00-5a2-a5bf-7c88-4d8f.ngrok-free.app"
 
 class NetworkingManager {
     

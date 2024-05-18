@@ -21,6 +21,7 @@ struct LoginContent: View {
     
     @State private var isPasswordVisible: Bool = false
     @State private var isPasswordFocused: Bool = false
+    @FocusState private var isTextFieldFocused: Bool 
     
     
     var body: some View {
@@ -38,12 +39,17 @@ struct LoginContent: View {
                     label: "Email address",
                     placeholder: "Enter your email",
                     text: Binding(
-                        get: { vm.username },
-                        set: { vm.username = $0})
+                        get: { vm.email },
+                        set: { vm.email = $0})
                 )
+                .focused($isTextFieldFocused)
+                .onAppear {
+                    isTextFieldFocused = true
+                }
                 .disableAutocorrection(true)
                 .autocapitalization(.none)
                 .keyboardType(.emailAddress)
+                
                 
                 Spacer().frame(height: 20)
                 

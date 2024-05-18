@@ -11,5 +11,6 @@ import Foundation
 class BaseViewModel: ObservableObject {
     let navigator: Navigator = NavigationViewModel.shared.navigator
     let networkingManager: NetworkingManager = NetworkingManager.shared
+    let user: User? = UserDetails.shared.userDetails
  
 }

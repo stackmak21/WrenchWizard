@@ -109,6 +109,11 @@
 		F9BA49F42BDE38AF009D3E53 /* ButtonStyleAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BA49F32BDE38AF009D3E53 /* ButtonStyleAttributes.swift */; };
 		F9BA49F62BE2893A009D3E53 /* ActionButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BA49F52BE2893A009D3E53 /* ActionButtonStyle.swift */; };
 		F9BA49F82BE2DD4A009D3E53 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BA49F72BE2DD49009D3E53 /* LoginManager.swift */; };
+		F9CE15BE2BF8B8A000FB137E /* SectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE15BD2BF8B8A000FB137E /* SectionItem.swift */; };
+		F9CE15C02BF8E38E00FB137E /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE15BF2BF8E38E00FB137E /* CircleImage.swift */; };
+		F9CE15C22BF900A800FB137E /* ProfileSectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE15C12BF900A800FB137E /* ProfileSectionItem.swift */; };
+		F9CE15C52BF91BEE00FB137E /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE15C42BF91BEE00FB137E /* ProfileScreen.swift */; };
+		F9CE15C72BF9200200FB137E /* ProfileScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE15C62BF9200200FB137E /* ProfileScreenViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -217,6 +222,11 @@
 		F9BA49F32BDE38AF009D3E53 /* ButtonStyleAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyleAttributes.swift; sourceTree = "<group>"; };
 		F9BA49F52BE2893A009D3E53 /* ActionButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonStyle.swift; sourceTree = "<group>"; };
 		F9BA49F72BE2DD49009D3E53 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		F9CE15BD2BF8B8A000FB137E /* SectionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionItem.swift; sourceTree = "<group>"; };
+		F9CE15BF2BF8E38E00FB137E /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		F9CE15C12BF900A800FB137E /* ProfileSectionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSectionItem.swift; sourceTree = "<group>"; };
+		F9CE15C42BF91BEE00FB137E /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
+		F9CE15C62BF9200200FB137E /* ProfileScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -396,6 +406,7 @@
 		F960AABE2B7551D500944F6C /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				F9CE15C32BF904BF00FB137E /* Profile */,
 				F917A7082BD70A3200B626E5 /* Login */,
 				F917A7072BD70A2A00B626E5 /* Register */,
 				F9828D2D2BAF4E62000DBB69 /* HomeTabView */,
@@ -442,6 +453,9 @@
 				F917A7032BD6FD5400B626E5 /* SelectionPickerContent.swift */,
 				F917A70B2BD84A5300B626E5 /* LabeledDivider.swift */,
 				F9BA49F02BDDA821009D3E53 /* ActivityIndicator.swift */,
+				F9CE15BD2BF8B8A000FB137E /* SectionItem.swift */,
+				F9CE15BF2BF8E38E00FB137E /* CircleImage.swift */,
+				F9CE15C12BF900A800FB137E /* ProfileSectionItem.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -596,6 +610,15 @@
 				F9BA49F52BE2893A009D3E53 /* ActionButtonStyle.swift */,
 			);
 			path = ButtonStyles;
+			sourceTree = "<group>";
+		};
+		F9CE15C32BF904BF00FB137E /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F9CE15C42BF91BEE00FB137E /* ProfileScreen.swift */,
+				F9CE15C62BF9200200FB137E /* ProfileScreenViewModel.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -763,9 +786,11 @@
 				F931B0532B8958800095BD92 /* CategoriesButtonStyle.swift in Sources */,
 				F931B0992B968ED00095BD92 /* NavigationDirection.swift in Sources */,
 				F99D30122BCE4AA90013442D /* SelectProfessionalViewModel.swift in Sources */,
+				F9CE15C22BF900A800FB137E /* ProfileSectionItem.swift in Sources */,
 				F99D300D2BCAA5B20013442D /* NavigationControllerExtensions.swift in Sources */,
 				F960AB102B78DC5900944F6C /* Assets.swift in Sources */,
 				F917A71C2BD9B08B00B626E5 /* RegisterRoute.swift in Sources */,
+				F9CE15C72BF9200200FB137E /* ProfileScreenViewModel.swift in Sources */,
 				F931B0572B8A4F420095BD92 /* Category.swift in Sources */,
 				F917A7042BD6FD5400B626E5 /* SelectionPickerContent.swift in Sources */,
 				F99D30142BCE4CA80013442D /* SelectProfessionalRoute.swift in Sources */,
@@ -783,6 +808,7 @@
 				F917A7102BD8669100B626E5 /* LoginRequest.swift in Sources */,
 				F93ED5742B9D9CEB00A204D3 /* JobConfigurationScreen.swift in Sources */,
 				F917A6FC2BD4768F00B626E5 /* RadioButton.swift in Sources */,
+				F9CE15C52BF91BEE00FB137E /* ProfileScreen.swift in Sources */,
 				F917A70A2BD70A4300B626E5 /* LoginScreen.swift in Sources */,
 				F931B0552B89E4430095BD92 /* ListingItem.swift in Sources */,
 				F917A7162BD86B3700B626E5 /* LoginRoute.swift in Sources */,
@@ -791,6 +817,7 @@
 				F93ED56A2B9D11AE00A204D3 /* BaseViewModel.swift in Sources */,
 				F931B05B2B8BEF240095BD92 /* ExpandButtonFilterStyle.swift in Sources */,
 				F931B0932B94FC180095BD92 /* Navigator.swift in Sources */,
+				F9CE15BE2BF8B8A000FB137E /* SectionItem.swift in Sources */,
 				F960AB112B78DC5900944F6C /* Strings.swift in Sources */,
 				F93ED5682B9CBD1400A204D3 /* SubCategoriesViewModel.swift in Sources */,
 				F9BA49F42BDE38AF009D3E53 /* ButtonStyleAttributes.swift in Sources */,
@@ -810,6 +837,7 @@
 				F9BA49F82BE2DD4A009D3E53 /* LoginManager.swift in Sources */,
 				F960AAC62B7555A200944F6C /* FontExtensions.swift in Sources */,
 				F9828D192BA39A5D000DBB69 /* SelectionButtonStyle.swift in Sources */,
+				F9CE15C02BF8E38E00FB137E /* CircleImage.swift in Sources */,
 				F960AB322B7E7C9D00944F6C /* LabeledTextField.swift in Sources */,
 				F9828D2B2BA6E8E9000DBB69 /* AccessCameraView.swift in Sources */,
 				F931B0952B94FDF20095BD92 /* NavigationViewModel.swift in Sources */,

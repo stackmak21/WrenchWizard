@@ -18,6 +18,7 @@ struct ExploreScreen: View {
 
 struct ExploreContent: View {
     
+    let user = UserDetails.shared.userDetails
     @ObservedObject var vm: ExploreViewModel
     
     var body: some View{
@@ -82,13 +83,15 @@ struct ExploreContent: View {
     }
     
     @ViewBuilder func locationSection(_ container: GeometryProxy) -> some View {
-        Label(
-            title: { Text("28 Oktovriou 46, Tripoli").font(Typography.bold(size: 20)) },
-            icon: { Image(systemName: "location.circle.fill").resizable().foregroundColor(.gossamer).frame(width: 30, height: 30) }
-        )
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(.top, 16 + container.safeAreaInsets.top)
-        .padding(.leading)
+        if let user = user{
+            Label(
+                title: { Text(user.email).font(Typography.bold(size: 20)) },
+                icon: { Image(systemName: "location.circle.fill").resizable().foregroundColor(.gossamer).frame(width: 30, height: 30) }
+            )
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.top, 16 + container.safeAreaInsets.top)
+            .padding(.leading)
+        }
     }
     
     @ViewBuilder func searchSection(_ container: GeometryProxy) -> some View {

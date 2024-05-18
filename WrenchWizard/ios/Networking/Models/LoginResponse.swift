@@ -9,12 +9,12 @@ import Foundation
 
 // MARK: - LoginResponse
 struct LoginResponse: Codable {
-    let user: User
+    let user: UserResponse
     let accessToken, refreshToken, timestamp: String
 }
 
 // MARK: - User
-struct User: Codable{ 
+struct UserResponse: Codable{ 
     let userID, firstName, lastName, email: String
     let password: String
     let enabled: Bool

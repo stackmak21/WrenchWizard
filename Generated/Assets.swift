@@ -26,6 +26,16 @@ internal typealias AssetImageTypeAlias = ImageAsset.Image
 internal enum Asset {
   internal enum Illustrations {
     internal static let image = ImageAsset(name: "Image")
+    internal enum ProfileIcons {
+      internal static let billing = ImageAsset(name: "billing")
+      internal static let delete = ImageAsset(name: "delete")
+      internal static let favorite = ImageAsset(name: "favorite")
+      internal static let logout = ImageAsset(name: "logout")
+      internal static let manageAddress = ImageAsset(name: "manageAddress")
+      internal static let myProfile = ImageAsset(name: "myProfile")
+      internal static let refer = ImageAsset(name: "refer")
+      internal static let support = ImageAsset(name: "support")
+    }
     internal static let appleLogo = ImageAsset(name: "appleLogo")
     internal static let bathroom = ImageAsset(name: "bathroom")
     internal static let cleaning = ImageAsset(name: "cleaning")

@@ -25,7 +25,7 @@ struct HomeScreen: View {
                     case .messages:
                         EmptyView()
                     case .account:
-                        EmptyView()
+                        ProfileScreen()
                     }
                     
                 }
